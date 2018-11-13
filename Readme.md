@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [OLEKSII TOLSTONOH](https://up.htmlacademy.ru/htmlcss/23/user/620625).
-* Наставник: `Неизвестно`.
+* Наставник: `Никита Рогатнев`(https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 

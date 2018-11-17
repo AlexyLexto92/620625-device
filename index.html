@@ -7,14 +7,14 @@
   <body>
     <header class="main-header">
       
-        <a class="header-logo">DEVICE</a><!-- логотип -->
+        <a class="header-logo" href="index.html">DEVICE</a><!-- логотип --><!--ИСПРАВЛЕНО-->
         <nav class="main-navigation"></nav>
         <ul class="top-menu">
           <li class="search-form">
-              <form action="get" class="header-search">
+              <form action="https://echo.htmlacademy.ru" class="header-search">
                   <label for="search-field"></label>
                     <input type="search" placeholder="Поиск по сайту">
-                    <button class="btn-search">Найти</button>
+                    <button  class="btn-search" type="submit">Найти</button><!--ИСПРАВЛЕНО-->
                   </form>
           </li>
 
@@ -33,24 +33,22 @@
 
         <ul class="bottom-menu"> <!-- меню второго уровня -->
           <li class="menu-catalog">
-            <a class="menu-catalog-link" href="catalog.html">КАТАЛОГ ТОВАРОВ</a><!-- ссылка второго меню первого уровня -->
-            <div class="sub-menu-container">
-              <ul class="sub-menu-one">
+            <a class="menu-catalog-link" href="catalog.html">Каталог товаров</a><!-- ссылка второго меню первого уровня -->
+            <!--ИСПРАВЛЕНО-->
+              <ul class="sub-menu-one"><!--ИСПРАВЛЕНО-->
                 <li><a href="#">Виртуальная реальность</a></li><!-- ссылка второго уровня -->
                 <li><a href="">Моноподы для селфи</a></li><!-- ссылка второго уровня -->
-                <li><a href="#" >Экшн-камеры</a></li><!-- ссылка второго уровня -->
-              </ul>
-              <ul class="sub-menu-two">
+                <li><a href="#">Экшн-камеры</a></li><!-- ссылка второго уровня --><!--ИСПРАВЛЕНО-->
+              
                 <li><a href="#">Фитнес-браслеты</a></li><!-- ссылка второго уровня -->
                 <li><a href="#">Умные часы</a></li><!-- ссылка второго уровня -->
-              </ul>
-              <ul class="sub-menu-three">
+              
                 <li>
                   <a href="#">Квадрокоптеры</a><!-- ссылка второго уровня -->
                 </li>
               </ul>
 
-            </div>
+          
           </li>
 
           <li class="menu-delivery"><a href="#">Доставка</a></li><!-- ссылка первого уровня второго меню Доставка -->
@@ -67,23 +65,23 @@
          
       <section  class="popular-items-section"><!--популярные товары -->
         <ul class="popular-items-list"> <!--список популярных товаров -->
-          <li class="popular-items-one">
-            <a class="popular-items-one-link " href="#">Виртуальная реальность</a>
+          <li class="popular-items">
+            <a class="popular-items-link" href="#">Виртуальная реальность</a><!--ИСПРАВЛЕНО-->
           </li>
-          <li class="popular-items-twoo">
-            <a class="popular-items-twoo-link"  href="#">Моноподы для селфи</a>
+          <li class="popular-items">
+            <a class="popular-items-link"  href="#">Моноподы для селфи</a>
           </li>
-          <li class="popular-items-three">
-            <a class="popular-items-three=link" href="#">Экшн-камеры</a>
+          <li class="popular-items">
+            <a class="popular-items-link" href="#">Экшн-камеры</a>
           </li>
-          <li class="populat-items-four">
-            <a class="popular-items-four-link " href="#">Фитнес-браслеты</a>
+          <li class="populat-items">
+            <a class="popular-items-link " href="#">Фитнес-браслеты</a>
           </li>
-          <li class="popular=items-five">
-            <a class="popular-items-five-link" href="#">Умные часы</a>
+          <li class="popular=items">
+            <a class="popular-items-link" href="#">Умные часы</a>
           </li>
-          <li class="popular-items-six">
-            <a class="popular-items-six-link" href="#">Квадрокоптеры</a>
+          <li class="popular-items">
+            <a class="popular-items-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
@@ -127,8 +125,10 @@
 
 
     <footer class="main-footer">
-      <nav class="footer-top-nav">
-          <a class="footer-logo " href="index.html">DEVICE</a><!-- логотип подвала-->
+      <section class="footer-top-nav">
+        <div class="footer-logo"><!--ИСПРАВЛЕНО---->
+          <a class="footer-logo-link" >DEVICE</a><!-- логотип подвала-->
+        </div>
           <ul class="footer-top-nav-list"> <!--ссылки вверху-->
             <li class="footer-menu-items">
               <a class="footer-menu-items-link" href="#">Войти</a> 
@@ -140,16 +140,18 @@
                   <a class="footer-menu-items-link" href="#">Корзина</a> 
                 </li>
           </ul>
-      </nav>
+        </section>
 
       <nav class="footert-midle-nav">
         <address class="adres">г. Москва, ул. Строителей, 15</address><!--адрес-->
         <ul class="footert-midle-nav">
             <li class="menu-delivery-footer"><a href="#">Доставка</a></li><!-- ссылка первого уровня второго меню Доставка -->
-            <li class="menu-garanty -footer"><a href="#">Гарантия</a></li><!-- ссылка первого уровня второго меню Гарантия -->
+            <li class="menu-garanty-footer"><a href="#">Гарантия</a></li><!-- ссылка первого уровня второго меню Гарантия -->
             <li class="menu-contacts-footer"><a href="#">Контакты</a></li><!-- ссылка первого уровня второго меню Контакты -->
         </ul>
-        <p class="tel">Тел.: +7 (495) 495-95-95</p>
+        <div class="tel"><!--ИСПРАВЛЕНО-->
+        <p class="number">Тел.: +7 (495) 495-95-95</p>
+        </div>
       </nav>
 
       <nav class="footert-bottom-nav">
@@ -162,10 +164,12 @@
             </li>
             <li class="social-links-item">
                 <a class="social-links social-links-twiter" href="#"><span class="visually-hidden">Твиттер</span></a>
-              </li>
-            <li class="htmlacademy-link"><a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTMLACADEMY</span></a> </li>   
+              </li> 
           </ul>
       </nav>
+      <div class="html-logo-bottom"><!--ИСПРАВЛЕНО-->
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTMLACADEMY</span></a>   
+      </div>
 
     </footer>
 

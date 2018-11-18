@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Моноподы для селфи</title>
+    <title>Каталог</title>
   </head>
   <body>
     <header class="main-header">
@@ -71,33 +71,34 @@
       
       
 
-      <section class="forms"><!--формы  -->
+    <section class="forms"><!--формы  -->
        
       <aside class="chek"><!--радио кнопки и чекбоксы--><!--ИСПРАВЛЕНО-->
         <form method="post" action="htpps://echo.htmlacademy.ru">
-                <b>Цвет</b><!--ИСПРАВЛЕНО-->
-                <p><input type="checkbox" name="option1" value="a1" checked>Черный
+              <b>Цвет</b><!--ИСПРАВЛЕНО-->
+              <p><input type="checkbox" name="option1" value="a1" checked>Черный
                 <input type="checkbox" name="option2" value="a2">Белый
                 <input type="checkbox" name="option3" value="a3" checked>Синий
                 <input type="checkbox" name="option4" value="a4" checked>Красный
                 <input type="checkbox" name="option5" value="a5">Розовый</p>
                 <p><b>Bluetooth</b></p>
-                <p>
+              <p>
                 <input name="bluetoth" type="radio" value="yes"checked> есть
                 <input name="bluetoth" type="radio" value="no"> нет
-                </p>
+              </p>
                 
                 <p><input type="submit" value="Показать"></p>
-               </form>
+          </form>
 
-              </aside>
-</section>
+       </aside>
+      </section>
 
-<section class="main-menu-catalog"><!--фильтр и сортировка-->
-  <div class="filter-name">
+<section class="main-menu-catalog">
+  <div class="catalog-filter">
       <p class="catalog-aside-title">Фильтр:</p>
                <p class="catalog-sort__title">Сортировка:</p>
-      </div>
+  </div>
+
 <nav class="sort-navigation">
 <li class="sort-navigation-item sort-navigation-item-sale">
     <a class="sort-navigation-item-link">По цене</a>
@@ -109,10 +110,63 @@
             <a class="sort-navigation-item-link">По популярности</a>
         </li>
 </nav>
-
-
-
 </section>
+
+<section class="catalog-asortement"><!--асортимент товаров-->
+  
+
+  <div class="catalog-item"><!--первая позиция-->
+    <img class="catalog-item-image" src="" alt="Любительская селфи-палка" width="" height="" >
+    <a href="#"><h2 class="catalog-item-name">Любительская селфи-палка</h2></a>
+    <span class="catalog-item-value">500 руб.</span>
+    <form action="https://echo.htmlacademy.ru"><!--кнопки в каталоге-->
+       <button class="btn-catalog-busket">В корзину</button><!--кнопкапка Добавления товара в корзину   -->
+       <button class="btn-catalog-compare">Добавить к сравнению</button><!--кнопка Добавиь товар  к сравнению -->
+    </form>
+   </div>
+
+   <div class="catalog-item"><!--вторая позиция-->
+    <img class="catalog-item-image" src="" alt="Професиональная селфи-палка" width="360" height="380" >
+    <a href="#"><h2 class="catalog-item-name">Професиональная селфи-палка</h2></a>
+    <span class="catalog-item-value">1500 руб.</span>
+    <form action="https://echo.htmlacademy.ru"><!--кнопки в каталоге-->
+       <button class="btn-catalog-busket">В корзину</button><!--кнопкапка Добавления товара в корзину   -->
+       <button class="btn-catalog-compare">Добавить к сравнению</button><!--кнопка Добавиь товар  к сравнению -->
+    </form>
+   </div>
+
+   <div class="catalog-item"><!--третья позиция-->
+    <img class="catalog-item-image" src="" alt="Непотопляемая селфи-палка" width="" height="" >
+    <a href="#"><h2 class="catalog-item-name">Непотопляемая селфи-палка</h2></a>
+    <span class="catalog-item-value">2500 руб.</span>
+    <form action="https://echo.htmlacademy.ru"><!--кнопки в каталоге-->
+       <button class="btn-catalog-busket">В корзину</button><!--кнопкапка Добавления товара в корзину   -->
+       <button class="btn-catalog-compare">Добавить к сравнению</button><!--кнопка Добавиь товар  к сравнению -->
+    </form>
+   </div>
+
+   <div class="catalog-item"><!--четвёртая позиция-->
+    <img class="catalog-item-image" src="" alt="Селфи-палка'Следуй за мной' " width="" height="" >
+    <a href="#"><h2 class="catalog-item-name"> Селфи-палка"Следуй за мной"</h2></a>
+    <span class="catalog-item-value">4 900 руб.</span>
+    <form action="https://echo.htmlacademy.ru"><!--кнопки в каталоге-->
+       <button class="btn-catalog-busket">В корзину</button><!--кнопкапка Добавления товара в корзину   -->
+       <button class="btn-catalog-compare">Добавить к сравнению</button><!--кнопка Добавиь товар  к сравнению -->
+    </form>
+   </div>
+
+
+   <div class="paginator"><!--Реализация переключателя в каталоге с помощью ссылок-->
+       <a class="paginator-link paginator-link-prev" href="#" >Назад</a>
+    <div class="paginator-pages">
+      <a class="paginator-link paginator-link-pages-one" href="#">1</a>
+      <a class="paginator-link paginator-link-pages-two" href="#">2</a>
+      <a class="paginator-link paginator-link-pages-three" href="#">3</a>
+    </div>
+      <a class="paginator-link paginator-link-next" href="#">Вперед</a>
+   </div>
+</section>
+
 
 
       
@@ -125,7 +179,8 @@
           </div>
             <ul class="footer-top-nav-list"> <!--ссылки вверху-->
               <li class="footer-menu-items">
-                <a class="footer-menu-items-link" href="#">Войти</a> 
+                <a class="user-block-link-footer user-block-link-login" href="#">Валентин Петухов</a>
+                <a class="user-block-link-footer user-block-link_logout" href="#">Выйти</a> 
               </li>
               <li class="footer-menu-items">
                   <a class="footer-menu-items-link" href="#">Сравнить</a> 

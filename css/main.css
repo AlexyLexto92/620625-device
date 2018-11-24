@@ -1,0 +1,153 @@
+body{
+    width: 1440px;
+    height: 2795px; 
+    background-color: white;  
+}
+footer{
+    background-color:black;
+}
+
+/* задал цвет и размер фона согласно макета */
+a{
+    text-decoration: none;
+}
+/* убрал стили для a */
+
+li{
+    list-style: none;
+}
+/* убрал стили для li */
+.main-header{   
+width: 1160px;
+height: 299px;
+background-color: #f0c52e;
+opacity: 0.5;
+
+}
+/* задали цвет и размер main-header */
+
+.top-menu{
+display: flex;
+justify-content: space-around;
+}
+/* задали flex top-menu */
+
+ .slider{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+
+ }
+ .slider-control{
+position: absolute;
+top:150px;
+left:1000px;
+
+ }
+
+.slide-item{
+    display: flex;
+  width:1160px;
+  height:100%;  
+}
+
+
+
+.popular-items-section{
+   width: 1160px; 
+}
+/* задали margin для popular-items-section */
+.bottom-menu{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.sub-menu-one{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+}
+.popular-items-list{
+ display: flex;  
+ flex-direction: row;
+ justify-content: space-between; 
+}
+/* задали flex  для выравнивания елементов*/
+
+
+.popular-items-bg{
+    height: 160px;
+    width: 160px;
+    background-color: #f0c52e;
+    opacity: 0.5;    
+    
+}
+.brands{
+    display: flex;
+    justify-content: space-between;
+
+}
+.service{
+display: flex;
+}
+.service-content{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.about-contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top-nav{
+    display: flex;
+    flex-direction: row;   
+     
+}
+.footer-top-nav-list{
+    display: flex;
+    justify-content: center;   
+}
+.footer-midle-nav{
+    display: flex;
+    justify-content: center;
+}
+.social-links-list{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-map{
+    width: 960px;
+    height: 559px;
+    position: relative;
+}
+
+.modal-feedback{
+   
+    width: 960;
+    height: 556;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+.js-map-close{
+    display: block;
+    position: absolute;
+    left: 850px;
+    top:30px;
+}
+
+.service-controls{
+    display: flex;
+}
+
+
+

@@ -1,3 +1,17 @@
+@font-face {
+    font-family:"Gilroy - Extra Bold"; /* Имя шрифта */
+    src: url(../fonts/Gilroyextrabold.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family:"Open Sans"; /* Имя шрифта */
+    src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+ 
+   @font-face {
+    font-family:"Gilroy"; /* Имя шрифта */
+    src: url(../fonts/Gilroylight.ttf); /* Путь к файлу со шрифтом */
+   }
+
 body{
     width: 1440px;
     height: 2795px; 
@@ -15,6 +29,7 @@ footer{
 /* задал цвет и размер фона согласно макета */
 a{
     text-decoration: none;
+    color: #000000;
 }
 /* убрал стили для a */
 
@@ -30,7 +45,7 @@ opacity: 0.5;
 margin: 40px 140px auto 140px;
 }
 /* задали цвет и размер main-header */
-.header-logo{
+a.header-logo{
     width: 164px;
 height: 36px;
 color: #000000;
@@ -43,7 +58,17 @@ letter-spacing: 0.26px;
 }
 .top-menu{
 display: flex;
-
+}
+.menu-catalog-link,.menu-delivery,.menu-garanty,.menu-contacts{
+width: 214px;
+height: 12px;
+color: #000000;
+font-family: "Gilroy - Extra Bold";
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+text-transform: uppercase;
+letter-spacing: 3.6px;
 }
 
 /* задали flex top-menu */
@@ -125,20 +150,20 @@ table{
     margin-top: 71px;
 }
 .td-top-1{
-width: 79px;
+width: 83px;
 height: 31px;
 color: #000000;
-font-family: Gilroy;
+font-family: "Gilroy";
 font-size: 36px;
 font-weight: 300;
 line-height: 48px;
 letter-spacing: 0.36px;
 }
 .td-top-2{
-width: 61px;
+width: 66px;
 height: 26px;
 color: #000000;
-font-family: Gilroy;
+font-family: "Gilroy";
 font-size: 36px;
 font-weight: 300;
 line-height: 48px;
@@ -149,7 +174,7 @@ padding-left: 80px;
 width: 124px;
 height: 34px;
 color: #000000;
-font-family: Gilroy;
+font-family: "Gilroy";
 font-size: 36px;
 font-weight: 300;
 line-height: 48px;
@@ -220,7 +245,16 @@ display: none;
  justify-content: space-between; 
 }
 /* задали flex  для выравнивания елементов*/
-
+.popular-items-list p{
+width: 114px;
+height: 39px;
+color: #000000;
+font-family: "Gilroy - Extra Bold";
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.18px;
+}
 
 .popular-items-bg{
     height: 160px;
@@ -313,9 +347,12 @@ justify-content: flex-start;
     justify-content: flex-start;
 }
 .empty-1{
-    width: 25px;
+    width: 236px;
     
 }
 .empty-2{
-    width: 25px;
+    width: 302px;
+}
+.empty-3{
+    width: 84px;
 }

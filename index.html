@@ -20,15 +20,15 @@
                     <label for="search-field">
                         <input type="search" placeholder="Поиск по сайту" id="search-field">
                     </label>
-                    <button class="btn-search" type="submit">Найти</button>
+                    <button class="btn-search" type="submit" style="visibility:hidden">Найти</button>
                     <!--ИСПРАВЛЕНО-->
                 </form>
             </li>
-
+            <li class="empty-1"></li>
             <li class="user-blok">
                 <a class="user-blok-link" href="#">Войти</a>
             </li>
-
+            <li class="empty-2"></li>
             <li class="compare-blok">
                 <a class="compare-blok-link" href="#">Сравнить</a>
             </li>
@@ -44,8 +44,9 @@
                     <a class="menu-catalog-link" href="catalog.html">Каталог товаров</a>
                     <!-- ссылка второго меню первого уровня -->
                     <!--ИСПРАВЛЕНО-->
-                    <ul class="sub-menu-one">
-                        <!--ИСПРАВЛЕНО-->
+                    <div class="men">
+                    <ul class="sub-menu">
+                    <!--ИСПРАВЛЕНО-->
                         <li><a href="#">Виртуальная реальность</a></li>
                         <!-- ссылка второго уровня -->
                         <li><a href="">Моноподы для селфи</a></li>
@@ -53,20 +54,24 @@
                         <li><a href="#">Экшн-камеры</a></li>
                         <!-- ссылка второго уровня -->
                         <!--ИСПРАВЛЕНО-->
-
+                    </ul>
+                    
+                    <ul class="sub-mebu">
                         <li><a href="#">Фитнес-браслеты</a></li>
                         <!-- ссылка второго уровня -->
                         <li><a href="#">Умные часы</a></li>
                         <!-- ссылка второго уровня -->
-
+                    </ul>
+                    <ul class="sub-menu">
                         <li>
                             <a href="#">Квадрокоптеры</a>
                             <!-- ссылка второго уровня -->
                         </li>
                     </ul>
-
+                   </div>
                 </li>
-
+                <li class="empty"></li>
+                
                 <li class="menu-delivery"><a href="#">Доставка</a></li>
                 <!-- ссылка первого уровня второго меню Доставка -->
                 <li class="menu-garanty"><a href="#">Гарантия</a></li>
@@ -93,7 +98,7 @@
                 </label>
             </div>
 
-            <div class="slide-item">
+            <div class="slide-item slider-item-1">
                 <div class="slider-item-image">
                     <img src="img/index-img/slider-1.png.png" alt="картинка первого слайда" width="384px" height="486px">
                     <!--добавлена картинка первого слайда-->
@@ -101,32 +106,32 @@
 
                 <div class="slider-item-description">
                     <span class="slider-item-description-number slider-item-description-number">01</span>
-                    <h2 class="slider-item-description-title description-title">Делай селфи,как Бен Стиллер!</h2>
-                    <p class="slider-item-description-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <a href="#" class="slider-item-description-btn slide-btn">Подробнее</a>
+                    <h2 class="slider-item-description-title-1 description-title">Делай селфи,как Бен Стиллер!</h2>
+                    <p class="slider-item-description-text slider-item-description-text-1">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                    <a href="#" class="slider-item-description-btn-1 slide-btn">Подробнее</a>
                     <!--переверстал блок под таблицу-->
                     <table class="features slider-item-description-features">
                         <tr>
-                            <td>8,5 м</td>
-                            <td>5 кг</td>
-                            <td>Карбон</td>
+                            <td class="td-top-1">8,5 м</td>
+                            <td class="td-top-2"> 5 кг</td>
+                            <td class="td-top-3">Карбон</td>
                         </tr>
                         <tr>
-                            <td>Длина палки</td>
-                            <td>Вес палки</td>
-                            <td>Материал</td>
+                            <td class="td-footer-1">Длина палки</td>
+                            <td class="td-footer-2">Вес палки</td>
+                            <td class="td-footer-3">Материал</td>
                         </tr>
                     </table>
                 </div>
             </div>
 
-            <div class="slide-item">
+            <div class="slide-item slider-item-2">
                 <div class="slider-item-image">
                     <img src="img/index-img/slider-2.png.png" alt="картинка второго слайда" width="345px" height="485px">
                 </div>
                 <div class="slider-item-description">
                     <span class="slider-item-description-number slider-item-description-number">02</span>
-                    <h2 class="slider-item-description-title description-title">Худеем правильно!</h2>
+                    <h2 class="slider-item-description-title-2 description-title">Худеем правильно!</h2>
                     <p class="slider-item-description-text">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                     <a href="#" class="slider-item-description-btn slide-btn">Подробнее</a>
 
@@ -141,7 +146,7 @@
                 </div>
             </div>
 
-            <div class="slide-item ">
+            <div class="slide-item slider-item-3">
                 <div class="slider-item-image">
                     <img src="img/index-img/slider-3.png.png" alt="картинка третьего слайда" width="526px" height="334px">
                 </div>
@@ -174,7 +179,7 @@
                 <li class="popular-items">
                         <a class="popular-items-link" href="#">
                 <div class="popular-items-bg">
-                    <img src="img/index-img/popular-1.png" alt="popualr-item-1" width="97" height="55">
+                    <img src="img/index-img/popular-1.png" alt="popualr-item-1" width="97" height="55" style="margin:52px 32px 53px 31px;">
                 </div>
                 <p class="popular-item-text">Виртуальная реальность</p>
                  </a>
@@ -182,7 +187,7 @@
                 <li class="popular-items">
                         <a class="popular-items-link" href="#">
                         <div class="popular-items-bg">
-                  <img src="img/index-img/popular-2.png" alt="popualr-item-2" width="86" height="117">
+                  <img src="img/index-img/popular-2.png" alt="popualr-item-2" width="86" height="117"  style="margin:41px 36px 2px 38px;">
                   </div>
                   <p class="popular-item-text"> Моноподы для селфи</p>
                 </a>
@@ -190,7 +195,7 @@
                 <li class="popular-items">
                         <a class="popular-items-link" href="#">
                                 <div class="popular-items-bg">
-                    <img src="img/index-img/popular-3.png" alt="popualr-item-3" width="71" height="87">
+                    <img src="img/index-img/popular-3.png" alt="popualr-item-3" width="71" height="87"  style="margin:38px 40px 35px 49px;">
                     </div>
                  <p class="popular-item-text">Экшн-камеры</p>
                 </a>
@@ -198,7 +203,7 @@
                 <li class="popular-items">
                         <a class="popular-items-link " href="#">
                         <div class="popular-items-bg">
-                    <img src="img/index-img/popular-4.png" alt="popualr-item-4" width="107" height="65">
+                    <img src="img/index-img/popular-4.png" alt="popualr-item-4" width="107" height="65"  style="margin:50px 25px 45px 28px;">
                     </div>
                 <p class="popular-item-text">Фитнес-браслеты</p>
                 </a>
@@ -206,7 +211,7 @@
                 <li class="popular-items">
                     <a class="popular-items-link" href="#">
                             <div class="popular-items-bg" >
-                    <img src="img/index-img/popular-5.png" alt="popualr-item-5" width="56" height="98">
+                    <img src="img/index-img/popular-5.png" alt="popualr-item-5" width="56" height="98" style="margin:32px 49px 30px 55px;">
                     </div>
                     <p class="popular-item-text">Умные часы</p>
                 </a>
@@ -214,7 +219,7 @@
                 <li class="popular-items">
                         <a class="popular-items-link" href="#">
                         <div class="popular-items-bg" >
-                    <img src="img/index-img/poppular-6.png" alt="popualr-item-6" width="132" height="69">
+                    <img src="img/index-img/poppular-6.png" alt="popualr-item-6" width="132" height="69" style="margin:49px 15px 42px 13px;">
                     </div>
                 <p class="popular-item-text">Квадрокоптеры</p>
                 </a>

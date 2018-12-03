@@ -86,15 +86,20 @@
     .btn-search {
     visibility : hidden;
     border : black solid 2px;
+    background: inherit;
     padding : 4px;
     }
     .btn-search:hover {
     color : white;
-    background : black;
+    background :black;
     }
     .search-field:focus + button {
     visibility : visible;
     }
+    .search-field:active button {
+        visibility : visible;
+        }
+
     .search-field:focus {
     color : black;
     border : none;
@@ -157,6 +162,7 @@
     .bottom-menu > li:nth-child(4) {
     flex-basis : 15%;
     }
+    /* СЛАЙДЕР*/
     .slider {
     display : flex;
     flex-direction : column;
@@ -176,21 +182,21 @@
     height : 100%;
     justify-content : space-evenly;
     }
-    .slide-item-first img {
+    .slide-item-stand  img {
     width : 384px;
     height : 486px;
     }
-    .slide-item-second img {
+    .slide-item-bracelet img {
     width : 345px;
     height : 485px;
     }
-    .slider-item-third div:nth-child(1) {
+    .slider-item-kwadrocopter div:nth-child(1) {
     flex-basis : 45%;
     }
-    .slider-item-third div:nth-child(2) {
+    .slider-item-kwadrocopter div:nth-child(2) {
     flex-basis : 49%;
     }
-    .slider-item-third h2 {
+    .slider-item-kwadrocopter h2 {
     width : 502px;
     height : 90px;
     color : #000000;
@@ -265,7 +271,10 @@
     table {
     margin-top : 48px;
     }
-    .slider-item-description-features-one, .slider-item-description-features-five, .slider-item-description-features-four {
+
+    .slider-item-description-features-lenght-of-stand,
+     .slider-item-description-features-kwadrocopter-fly-lenght, 
+     .slider-item-description-features-work-hours {
     width : 84px;
     height : 31px;
     color : #000000;
@@ -275,7 +284,8 @@
     line-height : 48px;
     letter-spacing : 0.36px;
     }
-    .slider-item-description-features-twoo, .slider-item-description-features-six {
+    .slider-item-description-features-width-of-stand, 
+    .slider-item-description-features-kwadrocopter-fly-radius{
     width : 66px;
     height : 26px;
     color : #000000;
@@ -286,7 +296,7 @@
     letter-spacing : 0.36px;
     padding-left : 80px;
     }
-    .slider-item-description-features-three {
+    .slider-item-description-features-material-of-stand {
     width : 124px;
     height : 34px;
     color : #000000;
@@ -297,7 +307,9 @@
     letter-spacing : 0.36px;
     padding-left : 80px;
     }
-    .slider-item-description-features-specification-one, .slider-item-description-features-specification-four, .slider-item-description-features-specification-five {
+    .slider-item-description-features-specification-lenght-of-stand, 
+    .slider-item-description-features-specification-work-hours, 
+    .slider-item-description-features-specification-kwadrocopter-fly-lenght {
     width : 24%;
     height : 11px;
     color : #464646;
@@ -307,7 +319,8 @@
     line-height : 20px;
     letter-spacing : 0.13px;
     }
-    .slider-item-description-features-specification-twoo, .slider-item-description-features-specification-six {
+    .slider-item-description-features-specification-width-of-stand, 
+    .slider-item-description-features-specification-kwadrocopter-fly-radius{
     width : 60px;
     height : 9px;
     color : #464646;
@@ -318,7 +331,7 @@
     letter-spacing : 0.13px;
     padding-left : 80px;
     }
-    .slider-item-description-features-specification-three {
+    .slider-item-description-features-specification-material-of-stand{
     width : 60px;
     height : 12px;
     color : #464646;
@@ -329,6 +342,9 @@
     letter-spacing : 0.13px;
     padding-left : 80px;
     }
+
+
+    /*ПОПУЛЯРНЫЕ ТОВАРЫ*/
     .popular-items-section {
     width : 1160px;
     margin : 106px 140px auto 140px;
@@ -369,36 +385,37 @@
     .popular-items:focus img {
     opacity : 0.300000011920928955078125;
     }
-    .popular-items-bg-img-one {
+    .popular-items-bg-img-virtual {
     width : 97px;
     height : 55px;
     margin : 52px 32px 53px 31px;
     }
-    .popular-items-bg-img-twoo {
+    .popular-items-bg-img-monopod{
     width : 86px;
     height : 117px;
     margin : 41px 36px 2px 38px;
     }
-    .popular-items-bg-img-three {
+    .popular-items-bg-img-camera{
     width : 71px;
     height : 87px;
     margin : 38px 40px 35px 49px;
     }
-    .popular-items-bg-img-four {
+    .popular-items-bg-img-fitnes-bracelet{
     width : 107px;
     height : 65px;
     margin : 50px 25px 45px 28px;
     }
-    .popular-items-bg-img-five {
+    .popular-items-bg-img-smart-watch{
     width : 56px;
     height : 98px;
     margin : 32px 49px 30px 55px;
     }
-    .popular-items-bg-img-six {
+    .popular-items-bg-img-kvadro{
     width : 132px;
     height : 69px;
     margin : 49px 15px 42px 13px;
     }
+    /*БРЕНДЫ */
     .brands {
     display : flex;
     margin : 0 143px 94px 140px;
@@ -420,6 +437,7 @@
     .brands-item-logo4 img:hover {
     background-image : url(../img/logo-4-hover.jpg.png);
     }
+    /*СЕРВИС */
     .service {
     display : flex;
     width : 1440px;
@@ -937,3 +955,12 @@
     flex-direction : column;
     margin-top : 40px;
     }
+
+
+
+
+
+
+
+
+  

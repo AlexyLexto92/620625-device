@@ -15,7 +15,7 @@
     display : flex;
     flex-wrap : wrap;
     width : 1440px;
-    height : 2015px;
+    height : 100%;
     margin : 0 auto;
     }
     .container {
@@ -256,7 +256,6 @@
         .catalog-asortement {
             display: flex;
             flex-wrap: wrap;
-            padding: 62px;
             padding-top: 82px;
         }
         
@@ -340,14 +339,15 @@ opacity: 0.2;
 flex-basis: 2%;
         }
         .sort-navigation li:nth-child(6){
-            /* Style for "icon-down-" */
+flex-basis: 8%;
 width: 11px;
 height: 10px;
 
         }
 
 
-        .paginator {
+        .paginator {   
+             margin-right: 124px;
             margin-left: 66px;
             width: 100%;
             padding: 15px;

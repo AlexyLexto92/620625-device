@@ -1,21 +1,37 @@
-@font-face {
-    font-family:"Gilroy - Extra Bold"; /* Имя шрифта */
-    src: url(../fonts/Gilroyextrabold.ttf); /* Путь к файлу со шрифтом */
-   }
-   @font-face {
-    font-family:"Open Sans"; /* Имя шрифта */
-    src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
-   }
- 
-   @font-face {
-    font-family:"Gilroy"; /* Имя шрифта */
-    src: url(../fonts/Gilroylight.ttf); /* Путь к файлу со шрифтом */
-   }
+@font-face{
+    font-family:Gilroy;
+    font-weight:700;
+    src:url(../fonts/gilroyextrabold.woff) format("woff"),
+    url(../fonts/gilroyextrabold.woff2) format("woff2")
+}
+@font-face{
+    font-family:Gilroy;
+    font-weight:300;
+    src:url(../fonts/gilroylight.woff) format("woff"),
+    url(../fonts/gilroylight.woff2) format("woff2")
+}
+
+@font-face{
+    font-family:"Open Sans";
+    src:url(../fonts/opensans.woff) format("woff"),
+    url(../fonts/opensans.woff2) format("woff2")
+}
+@font-face{
+    font-family:"Open Sans";
+    font-weight:300;
+    src:url(../fonts/opensanslight.woff) format("woff"),
+    url(../fonts/opensanslight.woff2) format("woff2")
+}
+
+
+
+
    body {
-    display : flex;
+    font-family:"Open Sans",Arial,sans-serif;
+    display: flex;
     flex-wrap : wrap;
     width : 1440px;
-    height : 2795px;
+    height : 100%;
     margin : 0 auto;
     }
     .container {
@@ -35,29 +51,28 @@
     width : 1160px;
     height : 299px;
     background-color : #f7e296;
-    margin : 40px 140px auto 140px;
+    margin : 40px auto auto auto;
     display : flex;
     flex-direction : column;
     justify-content : flex-start;
     }
-    a.header-logo {
+    .header-logo {
     position : absolute;
     top : -26px;
     left : 38px;
     width : 164px;
-    height : 36px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 48px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 48px;
     text-transform : uppercase;
     letter-spacing : 0.26px;
     }
-    a.header-logo:hover {
+    .header-logo:hover {
     opacity : 0.60000002384185791015625;
     }
-    a.header-logo {
+    .header-logo {
     opacity : 0.300000011920928955078125;
     }
     .top-menu {
@@ -66,9 +81,7 @@
     padding-top : 30px;
     align-items : flex-end;
     }
-    form, input {
-    outline : none;
-    }
+   
     input[type="search"] {
     padding : 0;
     background : border-box;
@@ -76,8 +89,8 @@
     width : 150px;
     height : 30px;
     color : #000000;
-    font-family : "Open Sans";
-    font-size : 15px;
+    font-family : Open Sans,Arial,sans-serif;
+    font-size : 16px;
     font-weight : 300;
     line-height : 30px;
     letter-spacing : 0.15px;
@@ -87,7 +100,7 @@
     visibility : hidden;
     border : black solid 2px;
     background: inherit;
-    padding : 4px;
+    padding : 5px;
     }
     .btn-search:hover {
     color : white;
@@ -95,6 +108,7 @@
     }
     .search-field:focus + button {
     visibility : visible;
+    
     }
     .search-field:active button {
         visibility : visible;
@@ -105,6 +119,7 @@
     border : none;
     border-bottom : 2px solid black;
     opacity : 1;
+    outline : none;
     }
     .btn-search:focus {
     background : black;
@@ -119,21 +134,14 @@
     width : 214px;
     height : 12px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     text-transform : uppercase;
     letter-spacing : 3.6px;
     }
-    .menu-catalog::after {
-    content : " ";
-    background-image : url("../img/plus.svg");
-    background-repeat : repeat;
-    background : #000000;
-    font-size : 14px;
-    display : inline-block;
-    }
+   
     .top-menu li:nth-child(1) {
     flex-basis : 49%;
     }
@@ -162,12 +170,15 @@
     .bottom-menu > li:nth-child(4) {
     flex-basis : 15%;
     }
+
+
+
     /* СЛАЙДЕР*/
     .slider {
     display : flex;
     flex-direction : column;
     position : relative;
-    margin : -80px 140px auto 140px;
+    margin : -80px auto auto auto;
     }
     .slider-control {
     position : absolute;
@@ -200,9 +211,9 @@
     width : 502px;
     height : 90px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 47px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 56px;
     letter-spacing : 0.17px;
     }
@@ -213,9 +224,9 @@
     width : 198px;
     height : 131px;
     color : white;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 179px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 179.2px;
     letter-spacing : 0.36px;
     }
@@ -223,17 +234,17 @@
     width : 394px;
     height : 98px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 47px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 56px;
     letter-spacing : 0.17px;
     }
     .slider-item-description-text {
-    width : 479px;
+    width : 481px;
     height : 46px;
     color : #464646;
-    font-family : "Open Sans";
+    font-family :Open Sans,Arial,sans-serif;
     font-size : 15px;
     font-weight : 300;
     line-height : 30px;
@@ -244,9 +255,9 @@
     width : 133px;
     height : 8px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
@@ -258,9 +269,9 @@
     width : 133px;
     height : 8px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
@@ -272,70 +283,73 @@
     margin-top : 48px;
     }
 
-    .slider-item-description-features-lenght-of-stand,
-     .slider-item-description-features-kwadrocopter-fly-lenght, 
-     .slider-item-description-features-work-hours {
+    .features-lenght-of-stand,
+     .features-kwadrocopter-fly-lenght, 
+     .features-work-hours {
     width : 84px;
     height : 31px;
     color : #000000;
-    font-family : "Gilroy";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 36px;
     font-weight : 300;
     line-height : 48px;
     letter-spacing : 0.36px;
     }
-    .slider-item-description-features-width-of-stand, 
-    .slider-item-description-features-kwadrocopter-fly-radius{
+    .features-width-of-stand, 
+    .features-kwadrocopter-fly-radius{
     width : 66px;
     height : 26px;
     color : #000000;
-    font-family : "Gilroy";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 36px;
     font-weight : 300;
     line-height : 48px;
     letter-spacing : 0.36px;
     padding-left : 80px;
     }
-    .slider-item-description-features-material-of-stand {
+    .features-width-of-stand{
+        width: 95px;
+    }
+    .features-material-of-stand {
     width : 124px;
     height : 34px;
     color : #000000;
-    font-family : "Gilroy";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 36px;
     font-weight : 300;
     line-height : 48px;
     letter-spacing : 0.36px;
     padding-left : 80px;
     }
-    .slider-item-description-features-specification-lenght-of-stand, 
-    .slider-item-description-features-specification-work-hours, 
-    .slider-item-description-features-specification-kwadrocopter-fly-lenght {
-    width : 24%;
+    .specification-lenght-of-stand, 
+    .specification-work-hours, 
+    .specification-kwadrocopter-fly-lenght {
+    width : 25%;
     height : 11px;
     color : #464646;
-    font-family : "Open Sans";
+    font-family : Open Sans,Arial,sans-serif;
     font-size : 13px;
     font-weight : 300;
     line-height : 20px;
     letter-spacing : 0.13px;
     }
-    .slider-item-description-features-specification-width-of-stand, 
-    .slider-item-description-features-specification-kwadrocopter-fly-radius{
+    .specification-width-of-stand, 
+    .specification-kwadrocopter-fly-radius{
     width : 60px;
     height : 9px;
     color : #464646;
-    font-family : "Open Sans";
+    font-family : Open Sans,Arial,sans-serif;
     font-size : 13px;
     font-weight : 300;
     line-height : 20px;
     letter-spacing : 0.13px;
     padding-left : 80px;
     }
-    .slider-item-description-features-specification-material-of-stand{
+    .specification-material-of-stand{
     width : 60px;
     height : 12px;
     color : #464646;
-    font-family : "Open Sans";
+    font-family : Open Sans,Arial,sans-serif;
     font-size : 13px;
     font-weight : 300;
     line-height : 20px;
@@ -347,7 +361,7 @@
     /*ПОПУЛЯРНЫЕ ТОВАРЫ*/
     .popular-items-section {
     width : 1160px;
-    margin : 106px 140px auto 140px;
+    margin : 106px auto auto auto;
     }
     .popular-items-list {
     display : flex;
@@ -359,9 +373,9 @@
     width : 160px;
     height : 39px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     letter-spacing : 0.18px;
     }
@@ -415,46 +429,60 @@
     height : 69px;
     margin : 49px 15px 42px 13px;
     }
+
+
+
+
+
     /*БРЕНДЫ */
     .brands {
     display : flex;
-    margin : 0 143px 94px 140px;
+    margin : 0 auto 94px auto;
     justify-content : space-evenly;
     }
     .brands img {
     width : 260px;
     height : 100px;
+   }
+   .brands a:not(:first-child){
+       margin-left:40px;
+   }
+    .brands-item-dji img:hover {
+    background-image : url(../img/logo-1-hover.png);
     }
-    .brands-item-logo1 img:hover {
-    background-image : url(../img/logo-1-hover.jpg.png);
+    .brands-item-spgadgets img:hover {
+    background-image : url(../img/logo-2-hover.png);
     }
-    .brands-item-logo2 img:hover {
-    background-image : url(../img/logo-2-hover.jpg.png);
+    .brands-item-gopro img:hover {
+    background-image : url(../img/logo-3-hover.png);
     }
-    .brands-item-logo3 img:hover {
-    background-image : url(../img/logo-3-hover.jpg.png);
+    .brands-item-vive img:hover {
+    background-image : url(../img/logo-4-hover.png);
     }
-    .brands-item-logo4 img:hover {
-    background-image : url(../img/logo-4-hover.jpg.png);
-    }
+
+
+
+
+
+
     /*СЕРВИС */
     .service {
     display : flex;
     width : 1440px;
     height : 288px;
     background-color : #e5e5e5;
-    margin : 184px 0 94px 0;
+    margin : 184px auto 94px auto;
     }
     input[name="serviceradiobtn"] {
     display : none;
     }
-    .service-controls-btn1 {
+    .service-controls-delivery {
     flex-basis : 20%;
     }
-    .service-controls-btn2 {
+    .service-controls-garanty {
     flex-basis : 20%;
     }
-    .service-controls-btn3 {
+    .service-controls-credit {
     flex-basis : 40%;
     }
     .service-controls-btn label {
@@ -465,36 +493,38 @@
     background : #f0c52e;
     padding : 10px 20px 10px 20px;
     }
-    .service-controls-btn1 label:active, .service-controls-btn1 label:focus {
+    .service-controls-delivery label:active, .service-controls-delivery label:focus {
     background : black;
     padding : 10px 49% 10px 20px;
     outline : none;
     color : #f7e184;
     }
-    .service-controls-btn2 label:active, .service-controls-btn2 label:focus {
+    .service-controls-garanty label:active, .service-controls-garanty label:focus {
     background : black;
     padding : 10px 52% 10px 20px;
     outline : none;
     color : #f7e184;
     }
-    .service-controls-btn3 label:active, .service-controls-btn3 label:focus {
+    .service-controls-credit label:active, .service-controls-credit label:focus {
     background : black;
     padding : 10px 62% 10px 20px;
     outline : inherit;
     color : #f7e184;
     }
     .service-controls {
+        width: 294px;
     display : flex;
     border-right : 7px solid black;
     flex-direction : column;
     justify-content : flex-end;
-    flex-basis : 20%;
     margin-top : 0;
-    margin-left : 7%;
+    margin-bottom: 0px;
+    margin-left: 0%;
+    padding-left: 163px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
@@ -503,9 +533,9 @@
     width : 207px;
     height : 24px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
@@ -516,9 +546,9 @@
     width : 207px;
     height : 24px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
@@ -527,19 +557,21 @@
     padding : 10px 20px 10px 20px;
     }
     .service-content {
-    display : flex;
-    flex-direction : column;
-    justify-content : flex-start;
-    flex-basis : 70%;
-    margin-left : 10%;
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* flex-basis: 70%; */
+    width: 1042px;
+    padding-left: 116px;
+    /* margin-left: 10%; */
     }
     .content-service-title {
     width : 217px;
     height : 39px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 47px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 48px;
     letter-spacing : 0.21px;
     }
@@ -547,7 +579,7 @@
     width : 456px;
     height : 75px;
     color : #464646;
-    font-family : "Open Sans";
+    font-family : Open Sans,Arial,sans-serif;
     font-size : 15px;
     font-weight : 300;
     line-height : 30px;
@@ -574,9 +606,15 @@
     .content-service-delivery, .content-service-kredit {
     display : none;
     }
+
+
+
+
+    /* БЛОК КОНТАКТЫ И ОНАС*/
     .about-contacts {
     display : flex;
     justify-content : space-evenly;
+    margin-bottom: 93px;
     }
     .main-about-us, .main-contacts {
     justify-content : flex-start;
@@ -587,9 +625,9 @@
     width : 100%;
     height : 35px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 47px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 48px;
     letter-spacing : 0.21px;
     }
@@ -597,7 +635,7 @@
     width : 511px;
     height : 46px;
     color : #464646;
-    font-family : "Open Sans";
+    font-family : Open Sans,Arial,sans-serif;
     font-size : 15px;
     font-weight : 300;
     line-height : 30px;
@@ -608,18 +646,18 @@
     margin-top : 50px;
     }
     .main-about-us li {
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 16px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 40px;
     }
     .description-main-contacts-title {
     width : 100%;
     height : 34px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 47px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 48px;
     letter-spacing : 0.21px;
     }
@@ -637,9 +675,9 @@
     width : 207px;
     height : 24px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
@@ -650,9 +688,9 @@
     width : 207px;
     height : 24px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
@@ -664,9 +702,9 @@
     width : 50%;
     height : 44px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     text-transform : uppercase;
     letter-spacing : 2.15px;
     background : linear-gradient(to top, white 0%, white 40%, #f0c52e 40%, #f0c52e 60%, white 60%);
@@ -679,8 +717,234 @@
     .main-contacts-btn:focus {
     outline : none;
     }
-    footer {
-    margin-top : 93px;
+
+
+
+/* оформление каталога */
+.catalog-monopod-for-selfie{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    }
+    .catalog-monopod-for-selfie h1{
+    width: 483px;
+    height: 42px;
+    color: #000000;
+    font-family: Gilroy,Arial,sans-serif;
+    font-size: 47px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0.17px;
+    margin-left: 201px;
+    }
+    .breadcrumbs{
+    display: flex;
+    margin-left: 201px;
+    padding-left: 0px;
+    margin-top: 29px;
+    }
+    .general-forms{
+        display: flex;
+        
+    }
+
+    .chek{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background:#eeeeee;
+        height: 1287px;
+        flex-basis: 63%;
+        
+    }
+
+    b{
+        padding-left: 195px;
+    }
+    .color-check{
+        display: flex;
+        flex-direction: column;
+        padding-left: 195px;
+    }
+    .bluetoth-check{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-left: 195px;
+    }
+    .filter-btn{
+        margin-left: 195px;
+    }
+    .right-side{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-basis: 138%;
+        
+    }
+
+    
+    .catalog-aside-title{
+        text-align: center;
+        height: 70px;
+        width: 468px;
+        /* padding: 20px; */
+        /* padding-left: 195px; */
+        background: #dbdbdb;
+        color: #000000;
+        font-family: "Gilroy";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 0.91px;
+        margin: 0px;
+    }
+
+    .main-menu-catalog{
+        display: flex;
+        align-self: stretch;
+        background: #eeeeee;
+        padding: 7px;
+        
+    }
+    .sort-navigation{
+        display: flex;  
+
+    }
+
+    .catalog-asortement {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 82px;
+    }
+    
+    
+    .catalog-item:not(:nth-of-type(3)){
+        margin-left:72px;
+    }
+    .catalog-item:nth-of-type(4),
+    .catalog-item:nth-of-type(3){
+        margin-top: 60px;
+        margin-left:72px;
+    }
+
+    .catalog-item-image{
+        width: 360px;
+        height: 380px;
+       
+    }
+    
+    .sort-navigation{
+        display: flex;
+        justify-content: flex-end;
+        background: #eeeeee;
+        align-items: center;
+        margin: 0px;
+        padding-right: 73px;
+        /* padding-top: 22px; */
+        height: 70px;
+        /* padding-bottom: 22px; */
+        
+    }
+    .sort-navigation li:first-child{
+width: 145px;
+height: 18px;
+color: #000000;
+font-family: "Gilroy";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-transform: uppercase;
+letter-spacing: 0.91px;
+flex-basis: 17%;
+    }
+    .sort-navigation li:nth-child(2){
+width: 56px;
+height: 18px;
+color: #000000;
+font-family: "Open Sans";
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+flex-basis: 10%;
+    }
+    .sort-navigation li:nth-child(3){
+
+width: 54px;
+height: 18px;
+opacity: 0.3;
+color: #000000;
+font-family: "Open Sans";
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+flex-basis: 9%;
+    }
+    .sort-navigation li:nth-child(4){
+        /* Style for "По типу" */
+width: 120px;
+height: 18px;
+opacity: 0.3;
+color: #000000;
+font-family: "Open Sans";
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+flex-basis: 50%;
+    }
+    .sort-navigation li:nth-child(5){
+        /* Style for "icon-up-di" */
+width: 11px;
+height: 10px;
+opacity: 0.2;
+flex-basis: 2%;
+    }
+    .sort-navigation li:nth-child(6){
+flex-basis: 8%;
+width: 11px;
+height: 10px;
+
+    }
+
+
+    .paginator {   
+         margin-right: 124px;
+        margin-left: 66px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: #eeeeee;
+    }
+    .paginator li:first-child{
+        flex-basis: 43%;
+    }
+    .paginator li:last-child{
+        flex-basis: 10%;
+    }
+    .paginator li:nth-child(4){
+        flex-basis: 35%
+    }
+    .paginator li:nth-child(3){
+        flex-basis: 5%;
+    }
+    .paginator li:nth-child(2){
+        flex-basis: 5%
+    }
+
+
+
+
+
+
+
+
+    /* ФУТЕР */
+    .main-footer {
     display : flex;
     flex-direction : column;
     justify-content : space-around;
@@ -688,9 +952,9 @@
     height : 323px;
     background-color : #464646;
     color : #ffffff;
-    padding : 65px 100px 67px 100px;
+    padding : 65px 140px 66px 139px;
     }
-    footer > a {
+    .main-footer > a {
     color : #ffffff;
     }
     .main-footer a:hover {
@@ -702,19 +966,21 @@
     .footer-top-nav {
     display : flex;
     flex-direction : row;
+    
     }
     .footer-top-nav-list {
     display : flex;
     justify-content : flex-start;
     align-items : center;
-    }
+    padding-left: 0;
+}
     .footer-logo-link {
     width : 163px;
     height : 36px;
     color : #ffc600;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 48px;
-    font-weight : 400;
+    font-weight : 700;
     text-transform : uppercase;
     letter-spacing : 0.48px;
     }
@@ -723,55 +989,74 @@
     height : 11px;
     opacity : 0.699999988079071044921875;
     color : #ffffff;
-    font-family : "Open Sans";
+    font-family : Open Sans,Arial,sans-serif;
     font-size : 15px;
     font-weight : 300;
     line-height : 36px;
     letter-spacing : 0.15px;
     }
     .footer-top-nav-list li:nth-child(1) {
-    flex-basis : 76%;
+    flex-basis : 836px;
     }
     .footer-top-nav-list li:nth-child(2) {
-    flex-basis : 10%;
+    flex-basis : 113px;
     }
     .footer-top-nav-list li:nth-child(3) {
-    flex-basis : 9%;
+    flex-basis : 130px;
     }
     .footer-top-nav-list li:nth-child(4) {
-    flex-basis : 5%;
+    flex-basis : 82px;
     }
     .footer-midle-nav {
     display : flex;
     justify-content : flex-start;
     align-items : baseline;
     }
-    .footer-midle-nav a {
+    .footer-midle-nav-links{
+        display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-left: 0;
+    flex-basis: 632px;
+    
+    }
+    .footer-midle-nav-links a {
     width : 121px;
     height : 15px;
     color : #ffffff;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     line-height : 24px;
     text-transform : uppercase;
     letter-spacing : 3.6px;
     }
-    .footer-midle-nav li:nth-child(1) {
-    flex-basis : 30%;
+    .adress{
+        flex-basis: 367px;
+        color: #ffffff;
+font-family: Open Sans;
+font-size: 15px;
+font-weight: 300;
+line-height: 30px;
     }
-    .footer-midle-nav li:nth-child(2) {
-    flex-basis : 15%;
+    .footer-midle-nav-links li:first-child{
+        flex-basis: 159px;
     }
-    .footer-midle-nav li:nth-child(3) {
-    flex-basis : 15%;
+    .footer-midle-nav-links li:nth-child(2){
+       flex-basis: 147px;
+   }
+   .footer-midle-nav-links li:last-child{
+       flex-basis: 117px;
+   }
+    .tel{
+    flex-basis: 164px;
+    color: #ffffff;
+font-family: Open Sans,Arial,sans-serif;
+font-size: 15px;
+font-weight: 300;
+line-height: 30px;
     }
-    .footer-midle-nav li:nth-child(4) {
-    flex-basis : 26%;
-    }
-    .footer-midle-nav li:nth-child(5) {
-    flex-basis : 14%;
-    }
+   
     .social-links-list {
     display : flex;
     justify-content : flex-end;
@@ -789,17 +1074,21 @@
     content : url(../img/logo-html.svg);
     }
     .social-links-item-fb {
-    flex-basis : 5%;
+    flex-basis : 54px;
     }
     .social-links-item-instagram {
-    flex-basis : 5%;
+    flex-basis : 54px;
     }
     .social-links-item-twiter {
-    flex-basis : 45%;
+    flex-basis : 514px;
     }
     .html-logo-bottom {
     flex-basis : 2%;
     }
+
+
+
+    /*МОДАЛЬНЫЕ ОКНА*/
     .modal-map {
     width : 960px;
     height : 559px;
@@ -894,9 +1183,9 @@
     }
     .feedback-half-one > label {
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     }
     .feedback-half-twoo {
     display : flex;
@@ -904,9 +1193,9 @@
     }
     .feedback-half-twoo > label {
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     }
     .feedback-textarea {
     display : flex;
@@ -915,9 +1204,9 @@
     }
     .feedback-textarea label {
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     }
     input[name="email"], input[name="fullname"] {
     width : 360px;
@@ -935,9 +1224,9 @@
     margin-bottom : 92px;
     height : 44px;
     color : #000000;
-    font-family : "Gilroy - Extra Bold";
+    font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
-    font-weight : 400;
+    font-weight : 700;
     text-transform : uppercase;
     letter-spacing : 2.15px;
     background : linear-gradient(to top, white 0%, white 40%, #f0c52e 40%, #f0c52e 60%, white 60%);

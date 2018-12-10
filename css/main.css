@@ -27,12 +27,10 @@
 
 
    body {
-    font-family:"Open Sans",Arial,sans-serif;
+    font-family: "Open Sans",Arial,sans-serif;
     display: flex;
-    flex-wrap : wrap;
-    width : 1440px;
-    height : 100%;
-    margin : 0 auto;
+    flex-wrap: wrap;
+    margin: 0 auto;
     }
     .container {
     display : flex;
@@ -49,10 +47,12 @@
     .main-header {
     position : relative;
     width : 1160px;
-    height : 299px;
+    padding: 0 20px;
+    height : 265px;
     background-color : #f7e296;
     margin : 40px auto auto auto;
     display : flex;
+    padding-top : 34px;
     flex-direction : column;
     justify-content : flex-start;
     }
@@ -78,7 +78,7 @@
     .top-menu {
     display : flex;
     justify-content : flex-start;
-    padding-top : 30px;
+    
     align-items : flex-end;
     }
    
@@ -145,8 +145,9 @@
     .top-menu li:nth-child(1) {
     flex-basis : 49%;
     }
-    .top-menu li:nth-child(2) {
+    .user-blok {
     flex-basis : 32%;
+    }
     }
     .top-menu li:nth-child(3) {
     flex-basis : 9%;
@@ -171,7 +172,12 @@
     flex-basis : 15%;
     }
 
-
+    .container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
     /* СЛАЙДЕР*/
     .slider {
@@ -190,6 +196,7 @@
     position : relative;
     display : flex;
     width : 1160px;
+    padding: 0 20px;
     height : 100%;
     justify-content : space-evenly;
     }
@@ -197,6 +204,7 @@
     width : 384px;
     height : 486px;
     }
+    
     .slide-item-bracelet img {
     width : 345px;
     height : 485px;
@@ -361,7 +369,9 @@
     /*ПОПУЛЯРНЫЕ ТОВАРЫ*/
     .popular-items-section {
     width : 1160px;
+    padding: 0 20px;
     margin : 106px auto auto auto;
+    margin-bottom: 170px;
     }
     .popular-items-list {
     display : flex;
@@ -437,8 +447,11 @@
     /*БРЕНДЫ */
     .brands {
     display : flex;
+    width: 1160px;
+    padding: 0 20px;
     margin : 0 auto 94px auto;
     justify-content : space-evenly;
+   
     }
     .brands img {
     width : 260px;
@@ -467,47 +480,57 @@
 
     /*СЕРВИС */
     .service {
-    display : flex;
-    width : 1440px;
-    height : 288px;
-    background-color : #e5e5e5;
-    margin : 184px auto 94px auto;
+        min-height: 288px;
+        background-color: #e5e5e5;
+        margin-bottom: 94px;
     }
+    .service-container {
+        display: flex;
+        justify-content: center;
+        width: 1160px;
+        padding: 0 20px;
+        margin: 0 auto;
+        background-color: transparent;
+        position: relative;
+        top: -42px;
+    }
+
     input[name="serviceradiobtn"] {
     display : none;
     }
     .service-controls-delivery {
-    flex-basis : 20%;
+    margin-bottom: 40px;
     }
     .service-controls-garanty {
-    flex-basis : 20%;
+   margin-bottom: 40px;
     }
     .service-controls-credit {
-    flex-basis : 40%;
+   margin-bottom: 40px
     }
     .service-controls-btn label {
-    background : linear-gradient(to top, #e5e5e5 0%, #e5e5e5 40%, #f0c52e 40%, #f0c52e 60%, #e5e5e5 60%);
-    padding : 10px 20px 10px 20px;
-    }
+    background: linear-gradient(to top, #e5e5e50d 0%, #e5e5e500 40%, #f0c52e 40%, #f0c52e 60%, #e5e5e500 60%);
+    padding: 10px 20px 10px 20px;
+    
+}
     .service-controls-btn label:hover {
     background : #f0c52e;
     padding : 10px 20px 10px 20px;
     }
     .service-controls-delivery label:active, .service-controls-delivery label:focus {
     background : black;
-    padding : 10px 49% 10px 20px;
+    padding : 10px 54% 10px 20px;
     outline : none;
     color : #f7e184;
     }
     .service-controls-garanty label:active, .service-controls-garanty label:focus {
     background : black;
-    padding : 10px 52% 10px 20px;
+    padding : 10px 57% 10px 20px;
     outline : none;
     color : #f7e184;
     }
     .service-controls-credit label:active, .service-controls-credit label:focus {
     background : black;
-    padding : 10px 62% 10px 20px;
+    padding : 10px 66% 10px 20px;
     outline : inherit;
     color : #f7e184;
     }
@@ -519,8 +542,8 @@
     justify-content : flex-end;
     margin-top : 0;
     margin-bottom: 0px;
-    margin-left: 0%;
-    padding-left: 163px;
+    margin-left: 0;
+    padding-left: 0px;
     color : #000000;
     font-family : Gilroy,Arial,sans-serif;
     font-size : 18px;
@@ -560,10 +583,12 @@
         display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* flex-basis: 70%; */
-    width: 1042px;
+    position: relative;
+    top: -25px;
+    
+    width: 783px;
     padding-left: 116px;
-    /* margin-left: 10%; */
+  
     }
     .content-service-title {
     width : 217px;
@@ -588,19 +613,19 @@
     .content-service-delivery {
     background-image : url(../img/delivery.svg);
     background-repeat : no-repeat;
-    background-position-x : 80%;
+    background-position-x : 90%;
     background-position-y : 100%;
     }
     .content-service-garanty {
     background-image : url(../img/warranty.svg);
     background-repeat : no-repeat;
-    background-position-x : 80%;
+    background-position-x : 90%;
     background-position-y : 100%;
     }
     .content-service-kredit {
     background-image : url(../img/credit.svg);
     background-repeat : no-repeat;
-    background-position-x : 80%;
+    background-position-x : 90%;
     background-position-y : 100%;
     }
     .content-service-delivery, .content-service-kredit {
@@ -612,6 +637,9 @@
 
     /* БЛОК КОНТАКТЫ И ОНАС*/
     .about-contacts {
+        width: 1160px;
+        padding: 0 20px;
+        margin: 0 auto;
     display : flex;
     justify-content : space-evenly;
     margin-bottom: 93px;
@@ -721,14 +749,19 @@
 
 
 /* оформление каталога */
-.catalog-monopod-for-selfie{
+.catalog-contaiter{
+    width: 100%;
+}
+
+.catalog-monopod-for-selfie {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
-    }
+    margin: 0 auto;
+    width: 1160px;
+}
     .catalog-monopod-for-selfie h1{
-    width: 483px;
+    width: 1100px;
     height: 42px;
     color: #000000;
     font-family: Gilroy,Arial,sans-serif;
@@ -736,51 +769,54 @@
     font-weight: 300;
     line-height: 48px;
     letter-spacing: 0.17px;
-    margin-left: 201px;
+    margin-left: 60px;
     }
     .breadcrumbs{
     display: flex;
-    margin-left: 201px;
     padding-left: 0px;
     margin-top: 29px;
+    margin-left: 60px;
     }
     .general-forms{
         display: flex;
+        background: #eeeeee;
         
     }
-
-    .chek{
+    .toogle{
+    position: relative;
+    margin: 0;
+    padding: 0 0 32px;
+    border: none;
+    border-top: 2px solid black;
+    }
+    .chek {
+        width: 268px;
+        margin-left: 60px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        background:#eeeeee;
-        height: 1287px;
-        flex-basis: 63%;
+        align-items: s;
+        background: #eeeeee;
+        height: 100%;
         
     }
 
-    b{
-        padding-left: 195px;
-    }
     .color-check{
         display: flex;
         flex-direction: column;
-        padding-left: 195px;
+    
     }
     .bluetoth-check{
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        padding-left: 195px;
+    
     }
-    .filter-btn{
-        margin-left: 195px;
-    }
+    
     .right-side{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        flex-basis: 138%;
+      
         
     }
 
@@ -788,10 +824,7 @@
     .catalog-aside-title{
         text-align: center;
         height: 70px;
-        width: 468px;
-        /* padding: 20px; */
-        /* padding-left: 195px; */
-        background: #dbdbdb;
+        width: 268px;
         color: #000000;
         font-family: "Gilroy";
         font-size: 16px;
@@ -817,7 +850,9 @@
     .catalog-asortement {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 82px;
+        padding-top: 50px;
+        width: 900px;
+        background: white;
     }
     
     
@@ -944,15 +979,36 @@ height: 10px;
 
 
     /* ФУТЕР */
+    .social-links-list::before {
+        display: block;
+        content: "";
+        position: relative;
+        top: 10px;
+        right: 431px;
+        
+        width: 80px;
+        height: 7px;
+        bottom: 0;
+        background-color: #f7e184;
+    }
+
+    
     .main-footer {
-    display : flex;
+        min-height: 209px;
+        padding-top: 54px;
+        padding-bottom: 60px;
+        background-color: #464646;
+    
+    }
+    .footer-container{
+        display : flex;
     flex-direction : column;
     justify-content : space-around;
-    width : 1440px;
-    height : 323px;
+    width : 1160px;
+    padding: 0 20px;
     background-color : #464646;
     color : #ffffff;
-    padding : 65px 140px 66px 139px;
+    margin: 0 auto;
     }
     .main-footer > a {
     color : #ffffff;
@@ -1017,7 +1073,7 @@ height: 10px;
     justify-content: flex-start;
     align-items: baseline;
     padding-left: 0;
-    flex-basis: 632px;
+    flex-basis: 631px;
     
     }
     .footer-midle-nav-links a {

@@ -144,6 +144,28 @@
     text-transform : uppercase;
     letter-spacing : 3.6px;
     }
+    .sub-menu::before{
+    content: "";
+    top: 0;
+    height: 161px;
+    z-index: -1;
+    left: -60px;
+    width: 1160px;
+    padding: 0 20px;
+    padding-top: 0;
+    position: absolute;
+    background-color: #f7e296;
+}
+    
+    .sub-menu{
+        position: relative;
+        display: none;
+        z-index: 5;
+        padding: 0;
+    }
+    .sub-menu:hover, .menu-catalog-link:hover+.sub-menu{
+        display: block;
+    }
    
     .top-menu li:nth-child(1) {
     flex-basis : 49%;
@@ -751,8 +773,10 @@
 
 
 /* оформление каталога */
-.catalog-contaiter{
+.catalog-contaiter {
     width: 100%;
+    margin-top: -130px;
+    z-index: 1;
 }
 .catalog-title {
     display: flex;
@@ -821,7 +845,7 @@
         margin-left: 60px;
         display: flex;
         flex-direction: column;
-        align-items: s;
+        align-items:center;
         background: #eeeeee;
         height: 100%;
         

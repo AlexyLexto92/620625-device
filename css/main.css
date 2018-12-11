@@ -781,6 +781,26 @@
     margin-top: 29px;
     margin-left: 60px;
     }
+    .breadcrumbs li {
+        padding-right: 39px;
+        letter-spacing: .012em;
+        word-spacing: .012em;
+    }
+    .breadcrumbs a {
+        height: 18px;
+        padding-right: 23px;
+    }
+
+    
+    .breadcrumbs li:not(:last-child):after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 18px;
+        background-image: url(../img/nav-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     .general-forms{
         display: flex;
         background: #eeeeee;
@@ -949,18 +969,18 @@ margin-left: 20px;
         padding-top: 69px;
         background: white;
     }
-    .catalog-asortement div:first-child{
+    .catalog-asortement>div:first-child{
         margin-right:40px;
     }
-    .catalog-asortement div:nth-child(3){
+    .catalog-asortement>div:nth-child(3){
         margin-right:40px;
     }
-    .catalog-asortement div:nth-child(3),
-    .catalog-asortement div:nth-child(4){
+    .catalog-asortement>div:nth-child(3),
+    .catalog-asortement>div:nth-child(4){
         margin-top: 73px;
     }
-    .catalog-asortement div:nth-child(2),
-    .catalog-asortement div:nth-child(4){
+    .catalog-asortement>div:nth-child(2),
+    .catalog-asortement>div:nth-child(4){
         margin-left: 20px;
     }
     
@@ -971,6 +991,46 @@ margin-left: 20px;
         height: 380px;
        
     }
+    
+    .catalog-button {
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -200px;
+    min-height: 70px;
+    margin: 0;
+    margin: 0 auto;
+
+    }
+    .btn-catalog-busket{
+        width: 200px;
+        color: #000000;
+        font-family: Gilroy,Arial,sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2.15px;
+        background: linear-gradient(to top, rgba(238,238,238,0) 0%,rgba(238,238,238,0) 35%, #f0c52e 35%, #f0c52e 70%, rgba(238,238,238,0) 70%);
+        text-align: center;
+    }
+    .btn-catalog-busket:hover{
+        background: #f0c52e;
+    }
+
+    .btn-catalog-compare{
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    width: 200px;
+    font-size: 13px;
+}
+.btn-catalog-compare:hover{
+    color: rgba(0,0,0,1); 
+}
+
+    
+    
 
     
 
@@ -980,19 +1040,20 @@ margin-left: 20px;
         
         width: 100%;
         height: 70px;
-        padding: 15px;
-        padding-left: 13px;
+        padding-left: 0px;
         display: flex;
         flex-direction: row;
         align-items: center;
         background: #eeeeee;
     }
-    .paginator-prev,
-    .paginator-next{
+    .paginator-prev a,
+    .paginator-next a{
         width: 85px;
         padding: 25px 20px;
         color: #000;
+        
     }
+
     .paginator-pages{
         margin-right: 12px;
         margin-left: 12px;

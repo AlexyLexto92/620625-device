@@ -164,13 +164,23 @@
         padding: 0;
         padding-top: 22px;
         max-height: 300px;
+
+
+    
+color: #000000;
+font-family: "Open Sans";
+font-size: 15px;
+font-weight: 300;
+line-height: 36px;
+/* Text style for "В, иртуаль" */
+letter-spacing: 0.15px;
     }
     .sub-menu li:first-child{
-        width: 200px;
+        width: 181px;
         margin-right: 40px;
     }
     .sub-menu li:nth-child(2){
-        width: 200px;
+        width: 181px;
         margin-right: 40px;
     }
     .sub-menu li:nth-child(3){
@@ -1139,12 +1149,13 @@ margin-left: 20px;
 
     
     .main-footer {
-       width: 100%;
+        min-width: 1160px;
+        width: 100%;
         min-height: 209px;
         padding-top: 54px;
         padding-bottom: 60px;
         background-color: #464646;
-        margin: 0 auto;
+        
     
     }
     .footer-container{

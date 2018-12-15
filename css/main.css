@@ -64,7 +64,7 @@
     .header-logo {
     position : absolute;
     top : -26px;
-    left : 38px;
+    left: 59px;
     width : 164px;
     color : #000000;
     font-family : Gilroy,Arial,sans-serif;
@@ -838,13 +838,18 @@ letter-spacing: 0.15px;
     font-weight: 300;
     line-height: 48px;
     letter-spacing: 0.17px;
-    margin-left: 60px;
+    margin-left: 40px;
     }
     .breadcrumbs{
     display: flex;
     padding-left: 0px;
     margin-top: 29px;
-    margin-left: 60px;
+    margin-left: 40px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif, sans-serif;
+    letter-spacing: 0.14px;
     }
     .breadcrumbs li {
         padding-right: 39px;
@@ -861,7 +866,7 @@ letter-spacing: 0.15px;
         content: "";
         position: absolute;
         width: 7px;
-        height: 18px;
+        height: 25px;
         background-image: url(../img/nav-arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
@@ -883,13 +888,16 @@ letter-spacing: 0.15px;
     }
     .chek {
         width: 268px;
-        margin-left: 60px;
+        margin-left: 40px;
         display: flex;
         flex-direction: column;
         align-items:center;
         background: #eeeeee;
         height: 100%;
         
+    }
+    .chek>form{
+        padding-top: 69px;
     }
 
     .color-check{
@@ -987,18 +995,18 @@ letter-spacing: 0.15px;
 
     
     .catalog-aside-title{
-        background: #dbdbdb;
-        text-align: center;
-        height: 70px;
-        width: 268px;
-        color: #000000;
-        font-family: "Gilroy";
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        text-transform: uppercase;
-        letter-spacing: 0.91px;
-        margin: 0px;
+        width: 200px;
+    margin: 0;
+    padding-right: 68px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3.7px;
+    background: #dbdbdb
     }
 
     .main-menu-catalog{
@@ -1027,19 +1035,18 @@ letter-spacing: 0.15px;
         align-items: center;
         margin: 0px;
         height: 70px;
-        padding-left: 0;
+        padding-left: 50px;
         
     }
     .catalog-sort-title{
 width: 145px;
-height: 18px;
-color: #000000;
-font-family: "Gilroy";
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-transform: uppercase;
-letter-spacing: 0.91px;
+margin-left: 47px;
+font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3.7px;
 
     }
     .sort-navigation li:nth-child(1){
@@ -1080,7 +1087,7 @@ flex-basis: 140px;
     display: flex;
     padding: 0;
     padding-left: 228px;
-    margin-left: 50px;
+   
 }
 
     .sort-up{ 
@@ -1102,7 +1109,7 @@ margin-left: 20px;
     .catalog-asortement {
         display: flex;
         flex-wrap: wrap;
-        width: 780px;
+        width: 800px;
         padding-bottom: 72px;
         padding-left: 72px;
         padding-top: 69px;
@@ -1135,7 +1142,7 @@ margin-left: 20px;
     }
     .catalog-asortement>div:nth-child(2),
     .catalog-asortement>div:nth-child(4){
-        margin-left: 20px;
+        margin-left: 40px;
     }
     
     .catalog-item-image{

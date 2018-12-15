@@ -174,9 +174,16 @@ font-family: "Open Sans";
 font-size: 15px;
 font-weight: 300;
 line-height: 36px;
-/* Text style for "В, иртуаль" */
 letter-spacing: 0.15px;
     }
+
+    .sub-menu:hover, .menu-catalog-link:hover+.sub-menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
     .sub-menu li:first-child{
         width: 181px;
         margin-right: 40px;
@@ -199,10 +206,7 @@ letter-spacing: 0.15px;
         width: 200px;
     }
 
-    .sub-menu:hover, .menu-catalog-link:hover+.sub-menu{
-        display: flex;
-        flex-wrap: wrap;
-    }
+    
    
     .top-menu li:nth-child(1) {
     flex-basis : 49%;
@@ -1030,6 +1034,21 @@ margin-left: 20px;
         padding-top: 69px;
         background: white;
     }
+
+    
+
+
+
+ 
+
+
+
+
+
+        
+
+
+
     .catalog-asortement>div:first-child{
         margin-right:40px;
     }
@@ -1045,25 +1064,39 @@ margin-left: 20px;
         margin-left: 20px;
     }
     
-   
-
     .catalog-item-image{
         width: 360px;
         height: 380px;
        
     }
     
-    .catalog-button {
+
+    /*реализация ховера на содержимом каталоге */
+.catalog-button{
     width: 200px;
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    top: -200px;
     min-height: 70px;
-    margin: 0;
-    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    left: 0;
+    z-index: 1;
+    height: 208px;
+    padding-top: 172px;
+    background-color: rgba(238, 238, 238, 0.7);
+    visibility: hidden;
+}
+.catalog-button:hover,.catalog-item-image:hover~.catalog-button{
+    visibility: visible;
+}
 
-    }
+
+
+
+
+
+   
     .btn-catalog-busket{
         width: 200px;
         color: #000000;
@@ -1089,8 +1122,14 @@ margin-left: 20px;
 .btn-catalog-compare:hover{
     color: rgba(0,0,0,1); 
 }
-
-    
+    .catalog-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .catalog-price{
+        display: inline;
+    }
     
 
     

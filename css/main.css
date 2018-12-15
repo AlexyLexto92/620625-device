@@ -868,7 +868,7 @@ letter-spacing: 0.15px;
     }
     .general-forms{
         display: flex;
-        background: #eeeeee;
+        background: linear-gradient(to bottom, #dbdbdb 70px, #eeeeee 70px, #eeeeee 100%);
         margin: 0 auto;
         width: 1160px;
         padding: 0 20px;
@@ -895,14 +895,86 @@ letter-spacing: 0.15px;
     .color-check{
         display: flex;
         flex-direction: column;
+        margin-bottom: 31px;
     
     }
     .bluetoth-check{
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-    
+        margin-bottom: 31px;
     }
+
+    .filter-option-item{
+        width: 162px;
+        height: 40px;
+        position: relative;
+    }
+/* разметка чекбоксов*/
+    .filter-option-title::before {
+        content: "";
+        position: absolute;
+        left: -15px;
+        background-repeat: no-repeat;
+        background-position: left;
+        top: 0px;
+    width: 27px;
+    height: 23px;
+    }
+    .filter-checkbox-field:checked + .filter-option-title:active::before, 
+    .filter-option-title::before {
+        
+        background-image: url(../img/checkbox-off.svg);
+    }
+
+    .filter-checkbox-field:not(:checked) + .filter-option-title:active::before, 
+    .filter-checkbox-field:checked + .filter-option-title::before {
+        background-image: url(../img/checkbox-on.svg);
+    }
+
+
+
+    /* разметка радиокнопок */ 
+    .filter-radio-field:not(:checked) + .filter-option-title:active::before, 
+    .filter-radio-field:checked + .filter-option-title::before {
+        background-image: url(../img/radio-on.svg);
+    }
+
+    .filter-radio-field:checked + .filter-option-title:active::before, 
+    .bluetoth-check .filter-option-title::before {
+        top: -4px;
+        width: 25px;
+        height: 25px;
+        background-image: url(../img/radio-off.svg);
+    }
+    .filter-option-title::before {
+        content: "";
+        position: absolute;
+        left: -40px;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+ /* стилизация кнопки фильтра каталога*/
+    .filter-btn {
+        width : 200px;
+        height : 44px;
+        color : #000000;
+        font-family : Gilroy,Arial,sans-serif;
+        font-size : 18px;
+        font-weight : 700;
+        text-transform : uppercase;
+        letter-spacing : 2.15px;
+        background: linear-gradient(to top, transparent 0%, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+        padding: 10px 20px 10px 20px;
+        padding : 10px 20px 10px 20px;
+        border : none;
+        }
+        .filter-btn:hover {
+        background : #f0c52e;
+        }
+        .filter-btn:focus {
+        outline : none;
+        }
     
     .right-side{
         display: flex;
@@ -915,6 +987,7 @@ letter-spacing: 0.15px;
 
     
     .catalog-aside-title{
+        background: #dbdbdb;
         text-align: center;
         height: 70px;
         width: 268px;
@@ -940,6 +1013,7 @@ letter-spacing: 0.15px;
     /* сортировка*/
     .sort-catalog{
         display: flex;
+        background: #eeeeee;
         align-items: baseline;
     }
     .sort-navigation{
@@ -1067,7 +1141,7 @@ margin-left: 20px;
     .catalog-item-image{
         width: 360px;
         height: 380px;
-       
+        padding-bottom: 32px;
     }
     
 
@@ -1090,8 +1164,24 @@ margin-left: 20px;
 .catalog-button:hover,.catalog-item-image:hover~.catalog-button{
     visibility: visible;
 }
+ .catalog-link{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+ }
+  
 
+.catalog-item-value{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    text-align: right;
+    color: #464646;
+    letter-spacing: 0.45px;
 
+}
 
 
 
@@ -1128,7 +1218,8 @@ margin-left: 20px;
         flex-direction: column;
     }
     .catalog-price{
-        display: inline;
+    display: flex;
+    justify-content: space-between;
     }
     
 

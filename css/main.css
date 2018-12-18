@@ -387,18 +387,37 @@ letter-spacing: 0.15px;
     letter-spacing : 0.17px;
     }
     .slider-item-description-number {
-    position : absolute;
-    top : -68px;
-    right: 60px;
-    width : 198px;
-    height : 131px;
-    color : white;
-    font-family : "Gilroy",Arial,sans-serif;
-    font-size : 179px;
-    font-weight : 700;
-    line-height : 179.2px;
-    letter-spacing : 0.36px;
+            position: absolute;
+            top: -68px;
+            right: -83px;
+            width: 198px;
+            height: 131px;
+            color:white;
+            font-family: "Gilroy",Arial,sans-serif;
+            font-size: 179px;
+            font-weight: 700;
+            line-height: 179.2px;
+            letter-spacing: 0.36px;
     }
+    .kwadro-number{
+        right: 0;
+
+    }
+    .slider-item-description{
+        position: relative;
+    }
+    .slider-item-description::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 7px;
+        bottom: 0;
+        background-color:white;
+    }
+
     .slider-item-description-title {
     width : 394px;
     height : 98px;
@@ -812,6 +831,7 @@ letter-spacing: 0.15px;
     justify-content : flex-start;
     display : flex;
     flex-direction : column;
+    position: relative;
     }
     .description-about-us-title {
     width : 100%;
@@ -844,6 +864,23 @@ letter-spacing: 0.15px;
     line-height : 40px;
     list-style: circle;
     }
+
+    .main-about-us::before ,
+    .main-contacts::before{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 7px;
+        bottom: 0;
+        background-color:black;
+    }
+
+
+
+
     .description-main-contacts-title {
     width : 100%;
     height : 34px;
@@ -1126,7 +1163,7 @@ letter-spacing: 0.15px;
     }
     .sort-navigation{
         display: flex;
-        justify-content: baseline;
+        
     }
 
     .sort-navigation {
@@ -1477,6 +1514,9 @@ margin-left: 20px;
     
     .user-enter-footer{
         flex-basis: 122px;
+    }
+    .user-exit{
+        opacity: 0.3;
     }
 
     .user-name-footer::before {

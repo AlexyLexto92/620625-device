@@ -76,10 +76,10 @@
     letter-spacing : 0.26px;
     }
     .header-logo:hover {
-    opacity : 0.60000002384185791015625;
+    opacity : 0.3;
     }
-    .header-logo {
-    opacity : 0.300000011920928955078125;
+    .header-logo:active {
+    opacity : 0.6;
     }
     .top-menu {
     display : flex;
@@ -122,14 +122,28 @@
     color : white;
     background :black;
     }
+    
+    .btn-search:active{
+            opacity: 0.3;
+        }
+    .btn-search:focus,
     .search-field:focus + button {
     visibility : visible;
     
     }
-    .search-field:active button {
+    .btn-search:active,
+    .search-field:active + button {
         visibility : visible;
         }
-
+    .btn-search:active ~ .search-field,
+    .btn-search:hover ~ .search-field,
+    .btn-search:focus ~ .search-field{
+        color : black;
+        border : none;
+        border-bottom : 2px solid black;
+        opacity : 1;
+        outline : none;
+    }
     .search-field:focus {
     color : black;
     border : none;
@@ -137,14 +151,12 @@
     opacity : 1;
     outline : none;
     }
-    .btn-search:focus {
-    background : black;
-    }
+   
     .main-header a:hover {
-    opacity : 0.60000002384185791015625;
+    opacity : 0.6;
     }
-    .main-header a:focus {
-    opacity : 0.300000011920928955078125;
+    .main-header a:active {
+    opacity : 0.3;
     }
     .menu-catalog-link, .menu-delivery, .menu-garanty, .menu-contacts {
     width : 214px;
@@ -450,8 +462,8 @@ letter-spacing: 0.15px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
     background : linear-gradient(to top, white 0%, white 35%, #f0c52e 35%, #f0c52e 70%, white 70%);
-    padding-left : 20px;
-    padding-right : 20px;
+    padding-left : 48px;
+    padding-right : 48px;
     }
     .slider-item-description-btn:hover {
     width : 133px;
@@ -465,8 +477,24 @@ letter-spacing: 0.15px;
     letter-spacing : 2.15px;
     background : none;
     background-color : #f0c52e;
-    padding : 20px;
+    padding : 20px 48px;
     }
+    .slider-item-description-btn:active {
+        width : 133px;
+        height : 8px;
+        color : #0000004d;
+        font-family : "Gilroy",Arial,sans-serif;
+        font-size : 18px;
+        font-weight : 700;
+        line-height : 24px;
+        text-transform : uppercase;
+        letter-spacing : 2.15px;
+        background : none;
+        background-color : #f0c52e;
+        padding : 20px 48px;
+        }
+
+
     table {
     margin-top : 48px;
     }
@@ -586,12 +614,7 @@ letter-spacing: 0.15px;
     .popular-items:active img {
     opacity : 0.300000011920928955078125;
     }
-    .popular-items:focus p {
-    opacity : 0.300000011920928955078125;
-    }
-    .popular-items:focus img {
-    opacity : 0.300000011920928955078125;
-    }
+    
     .popular-items-bg-img-virtual {
     width : 97px;
     height : 55px;
@@ -678,45 +701,70 @@ letter-spacing: 0.15px;
         top: -42px;
     }
 
-    input[name="serviceradiobtn"] {
+    .service-controls-btn input[name="serviceradiobtn"] {
     display : none;
     }
     .service-controls-delivery {
     margin-bottom: 40px;
     }
+    .service-controls-delivery label{
+        padding: 10px 44px 10px 44px;
+    }
     .service-controls-garanty {
    margin-bottom: 40px;
+    }
+    .service-controls-garanty label{
+        padding: 10px 49px 10px 49px;
     }
     .service-controls-credit {
    margin-bottom: 40px
     }
+    .service-controls-credit label{
+        padding: 10px 61px 10px 61px;
+    }
     .service-controls-btn label {
-    background: linear-gradient(to top, #e5e5e50d 0%, #e5e5e500 40%, #f0c52e 40%, #f0c52e 60%, #e5e5e500 60%);
-    padding: 10px 20px 10px 20px;
-    
+    background: linear-gradient(to top, #e5e5e50d 0%, #e5e5e500 40%, #f0c52e 40%, #f0c52e 60%, #e5e5e500 60%);   
 }
-    .service-controls-btn label:hover {
+
+    .service-controls-delivery label:hover {
     background : #f0c52e;
-    padding : 10px 20px 10px 20px;
+    padding : 10px 44px 10px 44px;
     }
-    .service-controls-delivery label:active, .service-controls-delivery label:focus {
+    .service-controls-garanty label:hover {
+        background : #f0c52e;
+        padding : 10px 49px 10px 49px;
+        }
+        .service-controls-credit label:hover {
+            background : #f0c52e;
+            padding : 10px 61px 10px 61px;
+            }
+
+
+
+    .service-controls-delivery label:active
+    {
     background : black;
-    padding : 10px 54% 10px 20px;
+    padding : 10px 128px 10px 44px;
     outline : none;
     color : #f7e184;
     }
-    .service-controls-garanty label:active, .service-controls-garanty label:focus {
+    .service-controls-garanty label:active {
     background : black;
-    padding : 10px 57% 10px 20px;
+    padding : 10px 135px 10px 49px;
     outline : none;
     color : #f7e184;
     }
-    .service-controls-credit label:active, .service-controls-credit label:focus {
+    .service-controls-credit label:active{
     background : black;
-    padding : 10px 66% 10px 20px;
+    padding : 10px 146px 10px 61px;
     outline : inherit;
     color : #f7e184;
     }
+
+
+
+
+
     .service-controls {
         width: 294px;
     display : flex;
@@ -912,7 +960,7 @@ letter-spacing: 0.15px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
     background : linear-gradient(to top, white 0%, white 40%, #f0c52e 40%, #f0c52e 60%, white 60%);
-    padding : 10px 20px 10px 20px;
+    padding :10px 26px 10px 26px;
     }
     .about-us-btn:hover {
     width : 207px;
@@ -926,10 +974,26 @@ letter-spacing: 0.15px;
     letter-spacing : 2.15px;
     background : none;
     background-color : #f0c52e;
-    padding : 10px 20px 10px 20px;
+    padding : 10px 26px 10px 26px;
     }
+    .about-us-btn:active,
+    .about-us-btn:focus{
+        width : 207px;
+        height : 24px;
+        color : #00000030;
+        font-family : "Gilroy",Arial,sans-serif;
+        font-size : 18px;
+        font-weight : 700;
+        line-height : 24px;
+        text-transform : uppercase;
+        letter-spacing : 2.15px;
+        background : none;
+        background-color : #f0c52e;
+        padding : 10px 26px 10px 26px;
+        }
+
     .main-contacts-btn {
-    width : 50%;
+    width : 260px;
     height : 44px;
     color : #000000;
     font-family : "Gilroy",Arial,sans-serif;
@@ -944,8 +1008,10 @@ letter-spacing: 0.15px;
     .main-contacts-btn:hover {
     background : #f0c52e;
     }
-    .main-contacts-btn:focus {
+    .main-contacts-btn:active,
+    .main-contacts-btn:focus{
     outline : none;
+    color: #00000032;
     }
 
 
@@ -996,6 +1062,15 @@ letter-spacing: 0.15px;
     .breadcrumbs a {
         height: 18px;
         padding-right: 23px;
+    }
+    .breadcrumbs a{
+        color:#00000041;
+    }
+    .breadcrumbs a:hover{
+        color:#0000009d;
+    }
+    .breadcrumbs a:active{
+        color:#0000001a;
     }
 
     
@@ -1120,6 +1195,10 @@ letter-spacing: 0.15px;
         .filter-btn:focus {
         outline : none;
         }
+        .filter-btn:active {
+            background : #f0c52e;
+            color: #00000044;
+            }
     
     .right-side{
         display: flex;
@@ -1200,7 +1279,6 @@ line-height: 18px;
 
 width: 120px;
 height: 18px;
-opacity: 0.3;
 color: #000000;
 font-family: "Open Sans",Arial,sans-serif;
 font-size: 14px;
@@ -1211,7 +1289,6 @@ line-height: 18px;
         
 width: 120px;
 height: 18px;
-opacity: 0.3;
 color: #000000;
 font-family: "Open Sans",Arial,sans-serif;
 font-size: 14px;
@@ -1219,18 +1296,31 @@ font-weight: 400;
 line-height: 18px;
 flex-basis: 140px;
     }
-
+.sort-navigation-item-link,
+.sort-up a,
+.sort-down a{
+    opacity: 0.3;
+}
+.sort-navigation-item-link:hover,
+.sort-up a:hover,
+.sort-down a :hover{
+    opacity: 0.6;
+}
+.sort-navigation-item-link:active,
+.sort-up a:active,
+.sort-down a :active
+{
+    opacity: 1;
+}
 .sort-icon{
     display: flex;
     padding: 0;
     padding-left: 228px;
-   
 }
 
     .sort-up{ 
 width: 11px;
 height: 10px;
-opacity: 0.2;
 flex-basis: 2%;
     }
     .sort-down{
@@ -1346,6 +1436,10 @@ margin-left: 20px;
     .btn-catalog-busket:hover{
         background: #f0c52e;
     }
+    .btn-catalog-busket:active{
+        background: #f0c52e;
+        color: #00000044;
+    }
 
     .btn-catalog-compare{
     text-align: center;
@@ -1355,6 +1449,9 @@ margin-left: 20px;
 }
 .btn-catalog-compare:hover{
     color: rgba(0,0,0,1); 
+}
+.btn-catalog-compare:active{
+    color: rgba(0,0,0,0.2); 
 }
     .catalog-item{
         position: relative;
@@ -1372,7 +1469,6 @@ margin-left: 20px;
 /* кнопки страниц */
 
     .paginator {   
-        
         width: 100%;
         height: 70px;
         padding-left: 0px;
@@ -1380,21 +1476,52 @@ margin-left: 20px;
         flex-direction: row;
         align-items: center;
         background: #eeeeee;
+        font-family: "Gilroy",Arial,sans-serif;
+font-size: 16px;
+font-weight: 900;
+line-height: 24px;
+text-transform: uppercase;
+/* Text style for "Назад" */
+letter-spacing: 0.91px;
     }
-    .paginator-prev a,
+   
     .paginator-next a{
         width: 85px;
-        padding: 25px 20px;
-        color: #000;
-        
+        padding: 25px 32px;
+        color: #000;        
     }
+    .paginator-prev a{
+        width: 85px;
+        padding: 25px 38px;
+        color: #000;     
+    }
+    .paginator-prev a:hover,
+    .paginator-next a:hover{
+        background: #dbdbdb;
+        color: #000000;
+    }
+    .paginator-prev a:active,
+    .paginator-next a:active{
+        background: #dbdbdb;
+        color: #00000044;
+    }
+
 
     .paginator-pages{
         margin-right: 12px;
         margin-left: 12px;
         font-size: 14px;
-        
     }
+    .paginator-pages-link{
+        opacity: 0.3;
+    }
+    .paginator-pages-link:hover{
+        opacity: 0.6;
+    }
+    .paginator-pages-link:active{
+        opacity: 1;
+    }
+
     
     .paginator li:first-child{
         flex-basis: 43%;
@@ -1461,7 +1588,7 @@ margin-left: 20px;
     .main-footer a:hover {
     opacity : 0.6;
     }
-    .main-footer a:focus {
+    .main-footer a:active {
     opacity : 0.3;
     }
     .footer-top-nav {
@@ -1488,14 +1615,19 @@ margin-left: 20px;
     .footer-menu-items-link {
     width : 42px;
     height : 11px;
-    opacity : 0.699999988079071044921875;
-    color : #ffffff;
+    color : #ffffff70;
     font-family : "Open Sans",Arial,sans-serif;
     font-size : 15px;
     font-weight : 300;
     line-height : 36px;
     letter-spacing : 0.15px;
     }
+    .footer-menu-items-link:hover{
+        color: #ffffff;
+    }.footer-menu-items-link:hover ::before{
+        opacity: 0.6;
+    }
+
     .footer-logo{
     flex-basis : 693px;
     }
@@ -1595,7 +1727,7 @@ margin-left: 20px;
     .adress{
         flex-basis: 367px;
         color: #ffffff;
-font-family: Open Sans;
+font-family: "Open Sans",Arial,sans-serif;
 font-size: 15px;
 font-weight: 300;
 line-height: 30px;
@@ -1631,9 +1763,7 @@ line-height: 30px;
     .social-links-twiter {
     content : url(../img/twitter.svg);
     }
-    .html-logo-bottom a {
-    content : url(../img/logo-html.svg);
-    }
+    
     .social-links-item-fb {
     flex-basis : 54px;
     }
@@ -1643,9 +1773,22 @@ line-height: 30px;
     .social-links-item-twiter {
     flex-basis : 514px;
     }
+    .footer-container .social-links{
+        opacity: 0.3;
+    }
+    .footer-container .social-links:hover{
+        opacity: 0.6;
+    }
+    .footer-container .social-links:active{
+        opacity: 0.1;
+    }
+
     .html-logo-bottom {
     flex-basis : 2%;
     }
+    .html-logo-bottom a {
+        content : url(../img/logo-html.svg);
+        }
 
 
 
@@ -1723,14 +1866,14 @@ line-height: 30px;
     margin-right : 22px;
     height : 58px;
     width : 55px;
-    opacity : 0.60000002384185791015625;
+    opacity : 0.6;
     }
     .btn-close-fedback:hover {
     opacity : 1;
     }
-    .btn-close-fedback:focus {
+    .btn-close-fedback:active {
     outline : none;
-    opacity : 0.300000011920928955078125;
+    opacity : 0.3;
     }
     .feedback-form {
     display : flex;
@@ -1799,9 +1942,6 @@ line-height: 30px;
     }
     .modal-btn:hover {
     background : #f0c52e;
-    }
-    .modal-btn:focus {
-    outline : none;
     }
     
 

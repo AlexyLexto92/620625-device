@@ -82,30 +82,40 @@
     }
     .top-menu {
     display : flex;
-    justify-content : flex-start;
+    justify-content : flex-end;
+    align-items: baseline;
+    margin-top: 0;
     
-    align-items : flex-end;
     }
    
     input[type="search"] {
-    padding : 0;
-    background : border-box;
-    border : none;
-    width : 150px;
-    height : 30px;
-    color : #000000;
-    font-family : Open Sans,Arial,sans-serif;
-    font-size : 16px;
-    font-weight : 300;
-    line-height : 30px;
-    letter-spacing : 0.15px;
-    margin-right : -4px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-box-sizing: border-box;
+        
+        min-height: 49px;
+        width: 355px;
+        padding-right: 10px;
+        padding-left: 38px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 30px;
+        font-family: "Open Sans", Arial, sans-serif;
+        letter-spacing: 0.15px;
+        background-color: transparent;
+        background-image: url(../img/search.svg);
+        background-repeat: no-repeat;
+        background-position: 3px 17px;
+        border-style: none;
+        outline: 0;
     }
     .btn-search {
     visibility : hidden;
     border : black solid 2px;
     background: inherit;
-    padding : 5px;
+    padding : 15px;
+    margin-left: -4px;
     }
     .btn-search:hover {
     color : white;
@@ -149,7 +159,7 @@
     .sub-menu::before{
     content: "";
     top: 0;
-    height: 161px;
+    height: 157px;
     z-index: -1;
     left: -60px;
     width: 1160px;
@@ -207,26 +217,113 @@ letter-spacing: 0.15px;
     }
 
     
-   
-    .top-menu li:nth-child(1) {
+   /*иконки ТОР меню*/
+    .user-name{
     flex-basis : 49%;
     }
     .user-blok {
-    flex-basis : 32%;
+    flex-basis : 286px;
     }
+    
+    .compare-blok {
+    flex-basis : 143px;
+    
     }
-    .top-menu li:nth-child(3) {
-    flex-basis : 9%;
+    .basket-blok{
+    flex-basis : 154px;
     }
-    .top-menu li:nth-child(4) {
-    flex-basis : 10%;
+     .search-form{
+        flex-basis: 50%;
     }
+    .top-menu li a,
+    .footer-menu-items-link{
+        padding-left: 25px;
+        text-align: right;
+    }
+    .top-menu li, 
+    .footer-top-nav-list li{
+        position: relative;
+    }
+   
+    .basket-blok a::before{
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 3px;
+            width: 12px;
+            height: 12px;
+            background-image: url(../img/cart.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .compare-blok a::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: 5px;
+            width: 10px;
+            height: 10px;
+            background-image: url(../img/compare.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .user-name::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 13px;
+            height: 12px;
+            background-image: url(../img/user.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .user-enter::before{
+        content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url(../img/user.svg);
+    background-repeat: no-repeat;
+    background-position: center;    
+    }
+
+    
+
+
+
+
+
+
+
+
     .bottom-menu {
     display : flex;
     flex-direction : row;
     }
-    .bottom-menu > li:first-child {
+    .bottom-menu li{
+        position: relative;
+    }
+    .menu-catalog{
     flex-basis : 49%;
+    
+    }
+    .menu-catalog-link{
+        padding-right: 29px;
+    }
+    .menu-catalog-link::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+         left: 224px;
+         width: 14px;
+         height: 14px;
+        background-image: url(../img/plus.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.3;
     }
     .bottom-menu > li:nth-child(2) {
     flex-basis : 16%;
@@ -237,7 +334,8 @@ letter-spacing: 0.15px;
     .bottom-menu > li:nth-child(4) {
     flex-basis : 15%;
     }
-
+    
+  
     
     
 
@@ -1320,6 +1418,7 @@ margin-left: 20px;
     .main-footer > a {
     color : #ffffff;
     }
+    
     .main-footer a:hover {
     opacity : 0.60000002384185791015625;
     }
@@ -1333,7 +1432,7 @@ margin-left: 20px;
     }
     .footer-top-nav-list {
     display : flex;
-    justify-content : flex-start;
+    justify-content : flex-end;
     align-items : center;
     padding-left: 0;
 }
@@ -1358,18 +1457,75 @@ margin-left: 20px;
     line-height : 36px;
     letter-spacing : 0.15px;
     }
-    .footer-top-nav-list li:nth-child(1) {
-    flex-basis : 836px;
+    .footer-logo{
+    flex-basis : 693px;
     }
-    .footer-top-nav-list li:nth-child(2) {
-    flex-basis : 113px;
+    .footer-logo-index{
+        flex-basis: 828px;
     }
-    .footer-top-nav-list li:nth-child(3) {
+    .user-blok-footer {
+    flex-basis : 250px;
+    }
+    .compare-blok-footer {
     flex-basis : 130px;
     }
-    .footer-top-nav-list li:nth-child(4) {
+    .basket-blok-footer {
     flex-basis : 82px;
     }
+    
+    .user-enter-footer{
+        flex-basis: 122px;
+    }
+
+    .user-name-footer::before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 0;
+        width: 13px;
+        height: 12px;
+        background-image: url(../img/user-name-footer.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .basket-blok-footer a::before{
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 3px;
+        width: 12px;
+        height: 12px;
+        background-image: url(../img/busket-footer.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .compare-blok-footer a::before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+        background-image: url(../img/compare-footer.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .user-enter-footer::before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 0;
+        width: 13px;
+        height: 12px;
+        background-image: url(../img/user-enter-footer.png);
+        color: #ffc600;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+
+
     .footer-midle-nav {
     display : flex;
     justify-content : flex-start;

@@ -26,8 +26,9 @@
                         </li>
             
                         <li class="user-blok">
-                            <a class="user-blok-link" href="#">Войти</a>
-                        </li>
+                            <a class="user-blok-link user-name" href="#">Валентин Петухов</a>
+                                <a class="user-blok-link user-exit" href="#">Выйти</a>
+                            </li>
             
                         <li class="compare-blok">
                             <a class="compare-blok-link" href="#">Сравнить</a>
@@ -108,7 +109,24 @@
                 <form method="post" action="htpps://echo.htmlacademy.ru">
 
                     <fieldset class="toogle">
-                            <h4>Стоимость</h4>
+                            
+            </fieldset>
+
+            <fieldset class="toogle filter-group filter-price">
+                    <h4 class="filter-group-title">Стоимость</h4>
+             <div class="filter-scale">
+               <div class="filter-bar"></div>
+               <button class="filter-toggle filter-toggle-min" type="button">
+                 <span class="visually-hidden">Минимальная стоимость</span>
+               </button>
+               <button class="filter-toggle filter-toggle-max" type="button">
+                 <span class="visually-hidden">Максимальная стоимость</span>
+               </button>
+             </div>
+             <div class="filter-price-control">
+               <label class="filter-price-label">от <input class="filter-price-input" type="text" name="min-price" value="0" readonly=""></label>
+               <label class="filter-price-label">до <input class="filter-price-input" type="text" name="max-price" value="5000" readonly=""></label>
+              </div>
             </fieldset>
 
             <fieldset class="toogle">
@@ -278,13 +296,14 @@
                     <!-- логотип подвала-->
                 </li>
                 <!--ссылки вверху-->
-                <li class="footer-menu-items">
-                    <a class="footer-menu-items-link" href="#">Войти</a>
+                <li class="footer-menu-items user-blok-footer">
+                    <a class="footer-menu-items-link user-name-footer" href="#">Валентин Петухов</a>
+                                <a class="footer-menu-items-link user-exit" href="#">Выйти</a>
                 </li>
-                <li class="footer-menu-items">
-                    <a class="footer-menu-items-link" href="#">Сравнить</a>
+                <li class="footer-menu-items compare-blok-footer">
+                    <a class="footer-menu-items-link " href="#">Сравнить</a>
                 </li>
-                <li class="footer-menu-items">
+                <li class="footer-menu-items  basket-blok-footer">
                     <a class="footer-menu-items-link" href="#">Корзина</a>
                 </li>
             </ul>

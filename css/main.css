@@ -1111,6 +1111,70 @@ letter-spacing: 0.15px;
     .chek>form{
         padding-top: 69px;
     }
+    /*оформление бегунка*/
+    .filter-bar {
+        width: 110px;
+        height: 2px;
+        background-color: #91c92f;
+    }
+    .filter-scale {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 10px;
+        background-color: #dbdbdb;
+    }
+
+.filter-toggle-min {
+    left: -6px;
+}
+.filter-toggle-max {
+    left: 107px;
+}
+.filter-toggle {
+    position: absolute;
+    top:-10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    background-color: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 1px 0 #dddddd;
+    box-shadow: 0 2px 1px 0 #dddddd;
+    cursor: pointer;
+}
+.filter-toggle:focus{
+outline: none;
+}
+.filter-toggle:active{
+    transform: scale(1.1);
+}
+.filter-price-control {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Gilroy", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.2);
+    letter-spacing: 0;
+}
+.filter-price-input {
+    width: 50px;
+    font-weight: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    background-color: transparent;
+    border-style: none;
+}
+
+
+
+
+
+
+
 
     .color-check{
         display: flex;
@@ -1141,32 +1205,50 @@ letter-spacing: 0.15px;
     width: 27px;
     height: 23px;
     }
-    .filter-checkbox-field:checked + .filter-option-title:active::before, 
+  /* .filter-checkbox-field:checked + .filter-option-title:active::before,*/
     .filter-option-title::before {
         
         background-image: url(../img/checkbox-off.svg);
     }
+    
 
-    .filter-checkbox-field:not(:checked) + .filter-option-title:active::before, 
+   /* .filter-checkbox-field:not(:checked) + .filter-option-title:active::before,*/
     .filter-checkbox-field:checked + .filter-option-title::before {
         background-image: url(../img/checkbox-on.svg);
+       
     }
+    /*реализация состояний */
+    .filter-option-title:hover::before{
+        opacity: 0.6;
+    }
+    
+    .filter-checkbox-field:disabled + .filter-option-title,
+    .filter-checkbox-field:disabled::before  {
+        opacity: 0.3;
+    }
+  
 
 
 
     /* разметка радиокнопок */ 
-    .filter-radio-field:not(:checked) + .filter-option-title:active::before, 
+   /* .filter-radio-field:not(:checked) + .filter-option-title:active::before, */
     .filter-radio-field:checked + .filter-option-title::before {
         background-image: url(../img/radio-on.svg);
     }
 
-    .filter-radio-field:checked + .filter-option-title:active::before, 
+   /* .filter-radio-field:checked + .filter-option-title:active::before, */
     .bluetoth-check .filter-option-title::before {
         top: -4px;
         width: 25px;
         height: 25px;
         background-image: url(../img/radio-off.svg);
     }
+    .filter-radio-field:disabled + .filter-option-title,
+    .filter-radio-field:disabled::before  {
+        opacity: 0.25;
+    }
+
+
     .filter-option-title::before {
         content: "";
         position: absolute;

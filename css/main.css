@@ -75,10 +75,10 @@
     text-transform : uppercase;
     letter-spacing : 0.26px;
     }
-    .header-logo:hover {
+    .catalog-header-logo:hover {
     opacity : 0.3;
     }
-    .header-logo:active {
+    .catalog-header-logo:active {
     opacity : 0.6;
     }
     .top-menu {
@@ -152,10 +152,10 @@
     outline : none;
     }
    
-    .main-header a:hover {
+    .main-header ul a:hover {
     opacity : 0.6;
     }
-    .main-header a:active {
+    .main-header ul a:active {
     opacity : 0.3;
     }
     .menu-catalog-link, .menu-delivery, .menu-garanty, .menu-contacts {
@@ -477,7 +477,7 @@ letter-spacing: 0.15px;
     letter-spacing : 2.15px;
     background : none;
     background-color : #f0c52e;
-    padding : 20px 48px;
+    padding: 9px 48px;
     }
     .slider-item-description-btn:active {
         width : 133px;
@@ -491,7 +491,7 @@ letter-spacing: 0.15px;
         letter-spacing : 2.15px;
         background : none;
         background-color : #f0c52e;
-        padding : 20px 48px;
+        padding: 9px 48px;
         }
 
 
@@ -708,19 +708,19 @@ letter-spacing: 0.15px;
     margin-bottom: 40px;
     }
     .service-controls-delivery label{
-        padding: 10px 44px 10px 44px;
+        padding: 9px 44px 9px 44px;
     }
     .service-controls-garanty {
    margin-bottom: 40px;
     }
     .service-controls-garanty label{
-        padding: 10px 49px 10px 49px;
+        padding: 9px 49px 9px 49px;
     }
     .service-controls-credit {
    margin-bottom: 40px
     }
     .service-controls-credit label{
-        padding: 10px 61px 10px 61px;
+        padding: 9px 61px 9px 61px;
     }
     .service-controls-btn label {
     background: linear-gradient(to top, #e5e5e50d 0%, #e5e5e500 40%, #f0c52e 40%, #f0c52e 60%, #e5e5e500 60%);   
@@ -732,7 +732,7 @@ letter-spacing: 0.15px;
     }
     .service-controls-garanty label:hover {
         background : #f0c52e;
-        padding : 10px 49px 10px 49px;
+        padding : 9px 49px 9px 49px;
         }
         .service-controls-credit label:hover {
             background : #f0c52e;
@@ -944,6 +944,7 @@ letter-spacing: 0.15px;
     height : 222px;
     margin-top : 44px;
     margin-bottom : 83px;
+    cursor: pointer;
     }
     .about-us-btn {
     margin-top : 70px;
@@ -960,7 +961,7 @@ letter-spacing: 0.15px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
     background : linear-gradient(to top, white 0%, white 40%, #f0c52e 40%, #f0c52e 60%, white 60%);
-    padding :10px 26px 10px 26px;
+    padding :8px 26px 8px 26px;
     }
     .about-us-btn:hover {
     width : 207px;
@@ -974,7 +975,7 @@ letter-spacing: 0.15px;
     letter-spacing : 2.15px;
     background : none;
     background-color : #f0c52e;
-    padding : 10px 26px 10px 26px;
+    padding : 8px 26px 8px 26px;
     }
     .about-us-btn:active,
     .about-us-btn:focus{
@@ -989,12 +990,12 @@ letter-spacing: 0.15px;
         letter-spacing : 2.15px;
         background : none;
         background-color : #f0c52e;
-        padding : 10px 26px 10px 26px;
+        padding : 8px 26px 8px 26px;
         }
 
     .main-contacts-btn {
     width : 260px;
-    height : 44px;
+    height : 40px;
     color : #000000;
     font-family : "Gilroy",Arial,sans-serif;
     font-size : 18px;
@@ -1002,7 +1003,7 @@ letter-spacing: 0.15px;
     text-transform : uppercase;
     letter-spacing : 2.15px;
     background : linear-gradient(to top, white 0%, white 40%, #f0c52e 40%, #f0c52e 60%, white 60%);
-    padding : 10px 20px 10px 20px;
+    padding : 8px 20px 8px 20px;
     border : none;
     }
     .main-contacts-btn:hover {
@@ -1071,6 +1072,9 @@ letter-spacing: 0.15px;
     }
     .breadcrumbs a:active{
         color:#0000001a;
+    }
+    .breadcrumbs li:last-child a{
+        color:#00000041;
     }
 
     
@@ -1458,6 +1462,27 @@ margin-left: 20px;
         width: 360px;
         height: 380px;
         padding-bottom: 32px;
+    }
+    .new-item{
+        position: absolute;
+        right: 28px;
+        top: 27px;
+        width: 56px;
+        height: 57px;
+    border: 2px solid #000000;
+    background: transparent;
+    opacity: 0.1;   
+    border-radius: 50%;
+    }
+    .new-text{
+color: #000000;
+font-family: "Gilroy",Arial,sans-serif;
+font-size: 14px;
+font-weight: 900;
+line-height: 29px;
+text-transform: uppercase;
+letter-spacing: 0.25px;
+text-align: center;
     }
     
 

@@ -6,6 +6,7 @@
     <title> Девайс-главная</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="js/main.js">
 </head>
 
 <body>
@@ -298,7 +299,7 @@
                 <section class="main-contacts">
                     <h2 class="description-main-contacts-title">Контакты</h2>
                     <p class="description-main-contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a href="#modal-map"><img src="img/map.jpg.png" alt="map"></a>
+                    <a class="modal-map-js" href="#modal-map"><img src="img/map.jpg.png" alt="map"></a>
                     <button class="btn main-contacts-btn">напишите нам</button>
                 </section>
             </div>
@@ -390,6 +391,31 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779953!2d37.52742931561666!3d55.68703098053586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2sby!4v1502280616067" allowfullscreen></iframe>
     </section>
 
+    <script>
+var link=document.querySelector(".modal-map-js");
+var show=document.querySelector(".modal-map");
+link.addEventListener("click", function(evt){
+    evt.preventDefault();
+show.classList.add("show-modal");
+});
+
+var closemap=document.querySelector(".js-map-close");
+closemap.addEventListener("click", function(){
+show.classList.remove("show-modal");
+});
+
+
+var modalfeedback=document.querySelector(".main-contacts-btn");
+var modalfeed=document.querySelector(".modal-feedback");
+modalfeedback.addEventListener("click", function(evt){
+    evt.preventDefault();
+    modalfeed.classList.add("show-modal-feedback");
+});
+var closefeedback= document.querySelector(".btn-close-fedback");
+closefeedback.addEventListener("click", function(){
+    modalfeed.classList.remove("show-modal-feedback");
+});
+</script>
 </body>
 
 </html>

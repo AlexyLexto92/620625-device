@@ -383,12 +383,12 @@ letter-spacing: 0.15px;
     height : 100%;
     justify-content : flex-end;
    }
-   /*
+   
    .slider-item-bracelet,
    .slider-item-kwadrocopter{
        display: none;
    }
-   */
+   
    .slider-item-image{
     flex-basis: 498px;
    }
@@ -795,19 +795,19 @@ letter-spacing: 0.15px;
     .service-controls-delivery label:active
     {
     background : black;
-    padding :9px 147px 10px 9px;
+    padding :9px 136px 9px 20px;
     outline : none;
     color : #f7e184;
     }
     .service-controls-garanty label:active {
     background : black;
-    padding : 9px 115px 9px 49px;
+    padding : 9px 141px 9px 22px;
     outline : none;
     color : #f7e184;
     }
     .service-controls-credit label:active{
     background : black;
-    padding : 9px 130px 9px 61px;
+    padding : 9px 155px 9px 36px;
     outline : inherit;
     color : #f7e184;
     }
@@ -1688,7 +1688,7 @@ letter-spacing: 0.91px;
 
     
     .paginator li:first-child{
-        flex-basis: 43%;
+        flex-basis: 52%;
     }
     .paginator li:last-child{
         flex-basis: 10%;

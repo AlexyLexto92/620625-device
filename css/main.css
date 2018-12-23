@@ -182,6 +182,7 @@
         padding-top: 0;
         position: absolute;
         background-color: #f7e296;
+        display:flex;  
 }
     
     .sub-menu{
@@ -191,9 +192,6 @@
         padding: 0;
         padding-top: 22px;
         max-height: 300px;
-
-
-    
 color: #000000;
 font-family: "Open Sans";
 font-size: 15px;
@@ -384,13 +382,12 @@ letter-spacing: 0.15px;
     height : 100%;
     justify-content : flex-end;
    }
-   
-   .slider-item-stand,
+   /*
    .slider-item-bracelet,
    .slider-item-kwadrocopter{
        display: none;
    }
-   
+   */
    .slider-item-image{
     flex-basis: 498px;
    }
@@ -1076,9 +1073,10 @@ letter-spacing: 0.15px;
 .catalog-contaiter {
     width: 100%;
     margin-top: -113px;
-    z-index: 1;
+
 }
 .catalog-title {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 1160px;

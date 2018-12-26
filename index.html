@@ -122,7 +122,7 @@
 
                 <div class="slide-item slider-item-bracelet">
                     <div class="slider-item-image">
-                        <img src="img/slider-2.png.png" alt="Фитнес-браслет"  width="384" height="486">
+                        <img src="img/slider-2.png.png" alt="Фитнес-браслет" width="384" height="486">
                     </div>
                     <div class="slider-item-description">
                         <span class="slider-item-description-number">02</span>
@@ -143,7 +143,7 @@
 
                 <div class="slide-item slider-item-kwadrocopter">
                     <div class="slider-item-image">
-                        <img src="img/slider-3.png.png" alt="квадрокоптер"  width="526" height="334">
+                        <img src="img/slider-3.png.png" alt="квадрокоптер" width="526" height="334">
                     </div>
 
                     <div class="slider-item-description">
@@ -228,9 +228,9 @@
             <div class="service-container">
                 <ul class="service-controls">
 
-                    <li class="service-controls-btn service-controls-delivery service-active">
-                        <label for="delivery-btn">
-                            <input class="servicebutton" name="serviceradiobtn" type="radio" id="delivery-btn" checked>Доставка</label>
+                    <li class="service-controls-btn service-controls-delivery">
+                        <label class="service-active" for="delivery-btn ">
+                            <input class="servicebutton " name="serviceradiobtn" type="radio" id="delivery-btn" checked>Доставка</label>
                     </li>
 
                     <li class="service-controls-btn service-controls-garanty">
@@ -277,8 +277,8 @@
 
             <section class="main-about-us">
                 <h2 class="description-about-us-title">О нас</h2>
-                <p class="description-about-us-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
                 <p class="description-about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                <p class="description-about-us-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
                 <ul class="main-about-us-list">
                     <li class="main-about-us-list-item">
                         <a class="main-about-us-list-item-link" href="#">Деловые линии</a>
@@ -341,13 +341,19 @@
 
             <ul class="social-links-list">
                 <li class="social-links-item-fb">
-                    <a class="social-links social-links-fb" href="#"></a>
+                    <a class="social-links social-links-fb" href="#">
+                        <span class="visually-hidden">facebook</span>
+                    </a>
                 </li>
                 <li class="social-links-item-instagram">
-                    <a class="social-links social-links-instagram" href="#"></a>
+                    <a class="social-links social-links-instagram" href="#" >
+                        <span class="visually-hidden">instagramm</span>
+                    </a>
                 </li>
                 <li class="social-links-item-twiter">
-                    <a class="social-links social-links-twiter" href="#"></a>
+                    <a class="social-links social-links-twiter" href="#">
+                        <span class="visually-hidden">twiter</span>
+                    </a>
                 </li>
 
                 <li class="html-logo-bottom">
@@ -388,30 +394,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779953!2d37.52742931561666!3d55.68703098053586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2sby!4v1502280616067" allowfullscreen></iframe>
     </section>
 
-    <script>
-        var link = document.querySelector(".modal-map-js");
-        var show = document.querySelector(".modal-map");
-        link.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            show.classList.add("show-modal");
-        });
-
-        var closemap = document.querySelector(".js-map-close");
-        closemap.addEventListener("click", function() {
-            show.classList.remove("show-modal");
-        });
-
-        var modalfeedback = document.querySelector(".main-contacts-btn");
-        var modalfeed = document.querySelector(".modal-feedback");
-        modalfeedback.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            modalfeed.classList.add("show-modal-feedback");
-        });
-        var closefeedback = document.querySelector(".btn-close-fedback");
-        closefeedback.addEventListener("click", function() {
-            modalfeed.classList.remove("show-modal-feedback");
-        });
-    </script>
+    <script src="js/main.min.js.js"></script>
 </body>
 
 </html>

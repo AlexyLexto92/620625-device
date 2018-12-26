@@ -23,7 +23,7 @@ body {
 }
 .centrovka{
     margin: 0 auto;
-    margin-bottom: 78px;
+    margin-bottom: 82px;
 }
 .container {
     padding: 0 20px;
@@ -37,13 +37,16 @@ a {
     text-decoration : none;
     color : #000000;
 }
-li {
+.main-header li,
+.centrovka li,
+.footer-container li,
+.catalog-contaiter li {
     list-style: none;
 }
 .main-header {
     position: relative;
     width: 1160px;
-    height: 265px;
+    min-height: 265px;
     background-color: #f7e296;
     margin: 40px auto auto auto;
     display: flex;
@@ -139,7 +142,7 @@ input[type="search"] {
 }
 .menu-catalog-link, .menu-delivery, .menu-garanty, .menu-contacts {
     width : 214px;
-    height : 12px;
+    min-height : 12px;
     color : #000000;
     font-family : "Gilroy",Arial,sans-serif;
     font-size : 18px;
@@ -151,7 +154,7 @@ input[type="search"] {
 .sub-menu::before{
     content: "";
     top: 0;
-    height: 162px;
+    min-height: 162px;
     z-index: -1;
     left: -58px;
     width: 1160px;
@@ -336,12 +339,12 @@ input[type="search"] {
     flex-basis: 498px;
 }
 .slide-item-stand img {
-    width : 384px;
-    height : 486px;
+    min-width : 384px;
+    min-height : 486px;
 }
 .slide-item-bracelet img {
-    width : 345px;
-    height : 485px;
+    min-width : 345px;
+    min-height : 485px;
 }
 .slider-item-kwadrocopter div:nth-child(1) {
     flex-basis : 45%;
@@ -350,8 +353,8 @@ input[type="search"] {
     flex-basis : 49%;
 }
 .slider-item-kwadrocopter h2 {
-    width : 502px;
-    height : 90px;
+    min-width : 502px;
+    min-height : 90px;
     color : #000000;
     font-family : "Gilroy",Arial,sans-serif;
     font-size : 47px;
@@ -363,8 +366,8 @@ input[type="search"] {
     position: absolute;
     top: -14px;
     right: 32px;
-    width: 198px;
-    height: 131px;
+    min-width: 198px;
+    min-height: 131px;
     color: white;
     font-family: "Gilroy",Arial,sans-serif;
     font-size: 179px;
@@ -391,10 +394,11 @@ input[type="search"] {
     background-color:white;
 }
 .slider-item-description-title {
-    width: 394px;
+    min-width: 394px;
     margin-left: 12px;
     margin-top: 79px;
-    height: 98px;
+    margin-bottom: 25px;
+    min-height: 98px;
     color: #000000;
     font-family: "Gilroy",Arial,sans-serif;
     font-size: 47px;
@@ -408,14 +412,14 @@ input[type="search"] {
     padding-left: 11px;
     margin-top: -10px;
     padding-top: 4px;
-    height: 46px;
+   min-height: 46px;
     color: #464646;
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0.15px;
-    margin-bottom: 55px;
+    margin-bottom: 51px;
 }
 .slider-item-description-btn {
     width : 133px;
@@ -548,9 +552,10 @@ table {
 /*ПОПУЛЯРНЫЕ ТОВАРЫ*/
 .popular-items-section {
     margin-top: 103px;
-    margin-bottom: 173px;
+    margin-bottom: 161px;
 }
 .popular-items-list {
+    flex-wrap: wrap;
     display : flex;
     flex-direction : row;
     justify-content : space-between;
@@ -560,7 +565,7 @@ table {
 }
 .popular-items-list p {
     width : 160px;
-    height : 39px;
+    min-height : 39px;
     color : #000000;
     font-family : "Gilroy",Arial,sans-serif;
     font-size : 18px;
@@ -570,7 +575,7 @@ table {
     margin-top: 33px;
 }
 .popular-items-bg {
-    height : 160px;
+    min-height : 160px;
     width : 160px;
     background-color : #f7e296;
 }
@@ -617,7 +622,7 @@ table {
 .brands {
     display: flex;
     width: 1160px;
-    margin: 3px auto 87px auto;
+    margin: 3px auto 90px auto;
     justify-content: flex-end;
     align-items: flex-end;
     padding: 0 20px;
@@ -666,7 +671,8 @@ table {
     top: -42px;
 }
 .service-controls-btn input[name="serviceradiobtn"] {
-    display : none;
+visibility: hidden;
+position:absolute;
 }
 .service-controls-delivery {
     margin-bottom: 39px;
@@ -698,7 +704,7 @@ table {
 .service-controls-credit label:hover {
     background : #f0c52e;
 }
-.service-controls-delivery label:active {
+.service-controls-btn .service-active {
     background : black;
     padding :9px 136px 9px 20px;
     outline : none;
@@ -721,11 +727,12 @@ table {
     display: flex;
     border-right: 6px solid black;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-top: 0;
     margin-bottom: 29px;
     margin-left: 0;
     padding-left: 0px;
+        padding-top: 30px;
     color: #000000;
     font-family: "Gilroy",Arial,sans-serif;
     font-size: 18px;
@@ -773,7 +780,8 @@ table {
 }
 .content-service-title {
     width : 217px;
-    height : 39px;
+    margin-bottom: 29px;
+    min-height : 39px;
     color : #000000;
     font-family : "Gilroy",Arial,sans-serif;
     font-size : 47px;
@@ -783,7 +791,7 @@ table {
 }
 .content-service-description {
     width : 456px;
-    height : 75px;
+    min-height : 75px;
     color : #464646;
     font-family : "Open Sans",Arial,sans-serif;
     font-size : 15px;
@@ -791,26 +799,27 @@ table {
     line-height : 30px;
     letter-spacing : 0.15px;
 }
+
 .content-service-delivery {
     background-image : url(../img/delivery.svg);
     background-repeat : no-repeat;
     background-position-x : 89%;
-    background-position-y : 100%;
+    background-position-y : 89%;
 }
 .content-service-garanty {
     background-image : url(../img/warranty.svg);
     background-repeat : no-repeat;
     background-position-x : 89%;
-    background-position-y : 100%;
+    background-position-y : 89%;
 }
 .content-service-kredit {
     background-image : url(../img/credit.svg);
     background-repeat : no-repeat;
     background-position-x : 89%;
-    background-position-y : 100%;
+    background-position-y : 89%;
 }
 .content-service-garanty, .content-service-kredit {
-    display : none;
+    display :none ;
 }
 /* БЛОК КОНТАКТЫ И ОНАС*/
 .about-contacts {
@@ -821,6 +830,10 @@ table {
     padding: 0 20px;
     margin: 0 auto;
 }
+.main-about-us{
+    width: 511px;
+}
+
 .main-about-us, .main-contacts {
     justify-content : flex-start;
     display : flex;
@@ -829,7 +842,8 @@ table {
 }
 .description-about-us-title {
     width : 100%;
-    height : 35px;
+    margin-bottom: 0;
+    min-height : 35px;
     color : #000000;
     font-family : "Gilroy",Arial,sans-serif;
     font-size : 48px;
@@ -839,7 +853,9 @@ table {
 }
 .about-contacts p {
     width : 511px;
-    height : 46px;
+    min-height : 46px;
+    width: 478px;
+    margin: 0;
     color : #464646;
     font-family : "Open Sans",Arial,sans-serif;
     font-size : 15px;
@@ -849,8 +865,9 @@ table {
 }
 .main-about-us ul {
     list-style-type : circle;
-    margin-top: 64px;
-    padding-left: 37px;
+    margin-top: 66px;
+    padding-left: 36px;
+    margin-bottom: 17px;
 }
 .main-about-us li {
     font-family : "Gilroy",Arial,sans-serif;
@@ -875,7 +892,8 @@ table {
 }
 .description-main-contacts-title {
     width : 100%;
-    height : 34px;
+    margin-bottom: 0px;
+    min-height : 34px;
     color : #000000;
     font-family : "Gilroy",Arial,sans-serif;
     font-size : 47px;
@@ -883,12 +901,19 @@ table {
     line-height : 73px;
     letter-spacing : 0.21px;
 }
+.main-contacts p{
+    width: 513px;
+}
 .main-contacts img {
     width : 560px;
     height : 222px;
-    margin-top : 39px;
-    margin-bottom : 69px;
     cursor: pointer;
+}
+.modal-map-js{
+    height: 222px;
+    background: lightgrey;
+    margin-top: 39px;
+    margin-bottom: 70px;
 }
 .about-us-btn {
     margin-top : 36px;
@@ -967,9 +992,8 @@ table {
     background: white;
 }
 .catalog-monopod h1 {
-   /* width: 1160px;
-    */
-    height: 42px;
+   
+    min-height: 42px;
     color: #000000;
     font-family: "Gilroy",Arial,sans-serif;
     font-size: 47px;
@@ -978,11 +1002,12 @@ table {
     letter-spacing: 0.17px;
     margin-left: 60px;
     margin-top: 38px;
+    margin-bottom: 24px;
 }
 .breadcrumbs {
     display: flex;
     padding-left: 0px;
-    margin-top: 1px;
+    margin-top: 0px;
     margin-left: 60px;
     font-weight: 300;
     font-size: 14px;
@@ -991,12 +1016,12 @@ table {
     letter-spacing: 0.14px;
 }
 .breadcrumbs li {
-    padding-right: 42px;
+    padding-right: 13px;
     letter-spacing: .012em;
     word-spacing: 0.012em;
 }
 .breadcrumbs a {
-    height: 18px;
+    height: 10px;
     padding-right: 23px;
 }
 .breadcrumbs a{
@@ -1028,10 +1053,16 @@ table {
     padding: 0 20px;
     margin-top: 31px;
 }
+.filter-group-title{
+    margin-top: 13px;
+    letter-spacing: 1.3px;
+    margin-bottom: 38px;
+
+}
 .toogle{
     position: relative;
     margin: 0;
-    padding: 0 0 40px;
+    padding: 0 0 33px;
     border: none;
     border-top: 2px solid black;
 }
@@ -1045,7 +1076,7 @@ table {
     height: 100%;
 }
 .chek>form{
-    padding-top: 68px;
+    padding-top: 69px;
 }
 /*оформление бегунка*/
 .filter-bar {
@@ -1106,18 +1137,22 @@ table {
 .color-check{
     display: flex;
     flex-direction: column;
-    margin-bottom: -16px;
+    margin-bottom: -11px;
+    margin-top: -9px;
 }
 .bluetoth-check{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin-bottom: -19px;
+    margin-bottom: -21px;
 }
 .filter-option-item{
     width: 162px;
     height: 40px;
     position: relative;
+}
+.filter-option-item input{
+    position: absolute;
 }
 /* разметка чекбоксов*/
 .filter-option-title::before {
@@ -1278,7 +1313,11 @@ table {
 .sort-navigation-item-link:hover, .sort-up a:hover, .sort-down a :hover{
     opacity: 0.6;
 }
-.sort-navigation-item-link:active, .sort-up a:active, .sort-down a :active {
+.sort-navigation-item-link:active, .sort-up a:active,
+.sort-down a :active,.sort-active a{
+    opacity: 1;
+}
+.sort-navigation-action{
     opacity: 1;
 }
 .sort-icon{
@@ -1313,7 +1352,7 @@ table {
     margin-right:40px;
 }
 .pool-item, .hand-item{
-    margin-top: 73px;
+    margin-top: 70px;
 }
 .professional-item, .hand-item{
     margin-left: 3px;
@@ -1420,7 +1459,7 @@ table {
 }
 /* кнопки страниц */
 .paginator {
-    margin-top: 54px;
+    margin-top: 59px;
     width: 762px;
     height: 70px;
     padding-left: 0px;
@@ -1442,7 +1481,7 @@ table {
 }
 .paginator-prev a{
     width: 85px;
-    padding: 25px 38px;
+    padding :25px 38px 25px 30px;
     color: #000;
 }
 .paginator-prev a:hover, .paginator-next a:hover{
@@ -1457,6 +1496,7 @@ table {
     margin-right: 12px;
     margin-left: 12px;
     font-size: 14px;
+    
 }
 .paginator-pages-link{
     opacity: 0.3;
@@ -1464,30 +1504,34 @@ table {
 .paginator-pages-link:hover{
     opacity: 0.6;
 }
-.paginator-pages-link:active{
+.paginator-pages .pages-link-active{
     opacity: 1;
 }
 .paginator li:first-child{
-    flex-basis: 52%;
+    letter-spacing: 4px;
 }
 .paginator li:last-child{
-    flex-basis: 10%;
+    letter-spacing: 4px;
+    margin-left: 184px;
 }
 .paginator li:nth-child(4){
-    flex-basis: 35% 
+    letter-spacing: 4px;
+    margin-left: 16px;
 }
 .paginator li:nth-child(3){
-    flex-basis: 5%;
+    letter-spacing: 4px;
+    margin-left: 16px;
 }
 .paginator li:nth-child(2){
-    flex-basis: 5% 
+    letter-spacing: 4px;
+    margin-left: 198px;
 }
 /* ФУТЕР */
 .social-links-list::before {
     display: block;
     position: absolute;
-    bottom: 12px;
-    top: 16px;
+    bottom: 8px;
+    top: 14px;
     left: 0;
     content: "";
     width: 80px;
@@ -1499,7 +1543,7 @@ table {
     padding: 0;
     width: 100%;
     min-height: 209px;
-    padding-top: 61px;
+    padding-top: 57px;
     padding-bottom: 47px;
     background-color: #464646;
 }
@@ -1528,7 +1572,7 @@ table {
 }
 .footer-top-nav-list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-start;
     padding-left: 0;
     margin-top: 0;
@@ -1570,13 +1614,13 @@ table {
     flex-basis : 252px;
 }
 .compare-blok-footer {
-    flex-basis : 130px;
+    flex-basis : 138px;
 }
 .basket-blok-footer {
-    flex-basis : 82px;
+    flex-basis : 80px;
 }
 .user-enter-footer{
-    flex-basis: 122px;
+    flex-basis: 111px;
 }
 .user-exit{
     opacity: 0.3;
@@ -1630,6 +1674,7 @@ table {
     display : flex;
     justify-content : flex-start;
     align-items : baseline;
+    margin-top: 8px;
 }
 .footer-midle-nav-links{
     display: flex;
@@ -1675,10 +1720,12 @@ table {
     line-height: 30px;
 }
 .social-links-list {
+    flex-wrap: wrap;
     position: relative;
     display : flex;
-    justify-content : flex-end;
-    margin-top: 50px;
+    justify-content : center;
+    margin-top: 48px;
+    padding-left: 20px;
 }
 .social-links-fb {
     content : url(../img/fb.svg);
@@ -1696,8 +1743,9 @@ table {
     flex-basis : 54px;
 }
 .social-links-item-twiter {
-    flex-basis : 514px;
+    flex-basis: 54px;
 }
+
 .footer-container .social-links{
     opacity: 0.3;
 }
@@ -1708,7 +1756,9 @@ table {
     opacity: 0.1;
 }
 .html-logo-bottom {
-    flex-basis : 2%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .html-logo-bottom a {
     content : url(../img/logo-html.svg);

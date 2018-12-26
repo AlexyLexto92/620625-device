@@ -88,7 +88,7 @@
                     <!--хлебные крошки свёрстаные с помощью списка-->
                     <!--ИСПРАВЛЕНО-->
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Каталог товаров</a></li>
                     <li><a class="active">Моноподы для селфи</a></li>
                 </ul>
             </div>
@@ -125,7 +125,7 @@
 
                         <fieldset class="toogle">
 
-                            <h4>Цвет</h4>
+                            <h4 class="filter-group-title">Цвет</h4>
                             <!--ИСПРАВЛЕНО-->
                             <ul class="color-check">
                                 <li class="filter-option-item">
@@ -153,7 +153,7 @@
                         </fieldset>
 
                         <fieldset class="toogle">
-                            <h4>Bluetooth</h4>
+                            <h4 class="filter-group-title">Bluetooth</h4>
                             <ul class="bluetoth-check">
                                 <li class="filter-option-item">
 
@@ -180,7 +180,7 @@
                         <h2 class="catalog-sort-title">Сортировка:</h2>
                         <ul class="sort-navigation">
                             <li class="sort-navigation-item sort-navigation-sale">
-                                <a class="sort-navigation-item-link">По цене</a>
+                                <a class="sort-navigation-item-link sort-navigation-action">По цене</a>
                             </li>
                             <li class="sort-navigation-item sort-navigation-type">
                                 <a class="sort-navigation-item-link" href="#">По типу</a>
@@ -191,11 +191,11 @@
                         </ul>
 
                         <ul class="sort-icon">
-                            <li class="sort-up">
-                                <a href="#"><img src="img/icon-up-dir.svg" alt="icon-up" width="11" height="10"></a>
+                            <li class="sort-up sort-active">
+                                <a  href="#"><img src="img/icon-up-dir.svg" alt="icon-up" width="11" height="10"></a>
                             </li>
                             <li class="sort-down">
-                                <a href="#"><img src="img/icon-down-dir.svg" alt="icon-down"  width="11" height="10"></a>
+                                <a href="#"><img src="img/icon-down-dir.svg" alt="icon-down" width="11" height="10"></a>
                             </li>
                         </ul>
                     </div>
@@ -208,8 +208,7 @@
                                 <p class="new-text">new</p>
                             </div>
                             <!--первая позиция-->
-                            <img class="catalog-item-image" src="img/item-1.jpg.png" alt="Любительская селфи-палка" width="360"
-                            height="380">
+                            <img class="catalog-item-image" src="img/item-1.jpg.png" alt="Любительская селфи-палка" width="360" height="380">
                             <div class="catalog-button">
                                 <a class="btn-catalog-busket" href="#">В корзину</a>
                                 <!-- Добавления товара в корзину   -->
@@ -227,8 +226,7 @@
                                 <p class="new-text">new</p>
                             </div>
                             <!--вторая позиция-->
-                            <img class="catalog-item-image" src="img/item-2.jpg.png" alt="Професиональная селфи-палка" width="360"
-                            height="380">
+                            <img class="catalog-item-image" src="img/item-2.jpg.png" alt="Професиональная селфи-палка" width="360" height="380">
                             <div class="catalog-button">
                                 <a class="btn-catalog-busket" href="#">В корзину</a>
                                 <!-- Добавления товара в корзину   -->
@@ -247,8 +245,7 @@
                                 <p class="new-text">new</p>
                             </div>
                             <!--третья позиция-->
-                            <img class="catalog-item-image" src="img/item-3.jpg.png" alt="Непотопляемая селфи-палка" width="360"
-                            height="380">
+                            <img class="catalog-item-image" src="img/item-3.jpg.png" alt="Непотопляемая селфи-палка" width="360" height="380">
                             <div class="catalog-button">
                                 <a class="btn-catalog-busket" href="#">В корзину</a>
                                 <!-- Добавления товара в корзину   -->
@@ -266,8 +263,7 @@
                                 <p class="new-text">new</p>
                             </div>
                             <!--четвёртая позиция-->
-                            <img class="catalog-item-image" src="img/item-4.jpg.png" alt="Селфи-палка'Следуй за мной" width="360"
-                            height="380">
+                            <img class="catalog-item-image" src="img/item-4.jpg.png" alt="Селфи-палка'Следуй за мной" width="360" height="380">
                             <div class="catalog-button">
                                 <a class="btn-catalog-busket" href="#">В корзину</a>
                                 <!-- Добавления товара в корзину   -->
@@ -284,7 +280,7 @@
                             <!--Реализация переключателя в каталоге с помощью ссылок-->
                             <li class="paginator-prev"> <a class="paginator-link paginator-link-prev" href="#">Назад</a></li>
 
-                            <li class="paginator-pages"> <a class="paginator-link paginator-pages-link" href="#">1</a></li>
+                            <li class="paginator-pages"> <a class="paginator-link paginator-pages-link  pages-link-active" href="#">1</a></li>
                             <li class="paginator-pages"> <a class="paginator-link paginator-pages-link" href="#">2</a></li>
                             <li class="paginator-pages"> <a class="paginator-link paginator-pages-link" href="#">3</a></li>
 
@@ -335,13 +331,19 @@
 
             <ul class="social-links-list">
                 <li class="social-links-item-fb">
-                    <a class="social-links social-links-fb" href="#"></a>
+                    <a class="social-links social-links-fb" href="#">
+                        <span class="visually-hidden">facebook</span>
+                    </a>
                 </li>
                 <li class="social-links-item-instagram">
-                    <a class="social-links social-links-instagram" href="#"></a>
+                    <a class="social-links social-links-instagram" href="#">
+                        <span class="visually-hidden">instagramm</span>
+                    </a>
                 </li>
                 <li class="social-links-item-twiter">
-                    <a class="social-links social-links-twiter" href="#"></a>
+                    <a class="social-links social-links-twiter" href="#">
+                        <span class="visually-hidden">twiter</span>
+                    </a>
                 </li>
 
                 <li class="html-logo-bottom">

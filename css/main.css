@@ -340,6 +340,11 @@ input[type="search"] {
     width: 23px;
     background-size: 50%;
     height: 23px;
+    z-index: 5;
+    cursor: pointer;
+}
+.slider-label :hover{
+    background: url(../img/slider-button.svg);
 }
 .slide-active{
     position: absolute;

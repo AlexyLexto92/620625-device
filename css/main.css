@@ -319,20 +319,25 @@ input[type="search"] {
     position : relative;
     margin : -111px auto auto auto;
 }
-.slider-control {
+.slider-control{
+    visibility: hidden;
+}
+.slider-control-button {
     display: flex;
     position: absolute;
-    top: 306px;
+    top: 305px;
     right: 75px;
+    z-index: 1;
 }
 .slider-control-item{
     width: 25px;
     height: 25px;
     margin-left: 8px;
-    
 }
 
-.slider-label{
+
+.slider-label{ 
+   
     position: absolute;
     background: url(../img/slider-button-empty.svg);
     background-repeat: no-repeat;
@@ -340,13 +345,19 @@ input[type="search"] {
     width: 23px;
     background-size: 50%;
     height: 23px;
-    z-index: 5;
-    cursor: pointer;
 }
-.slider-label :hover{
+
+.slider-label:hover{
     background: url(../img/slider-button.svg);
-}
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 23px;
+    background-size: 50%;
+    height: 23px;
+ }
+
 .slide-active{
+    content: "";
     position: absolute;
     background: url(../img/slider-button.svg);
     background-repeat: no-repeat;
@@ -354,7 +365,7 @@ input[type="search"] {
     width: 23px;
     background-size: 50%;
     height: 23px;
-    z-index: 5;
+   
 }
 .slide-item {
     position : relative;

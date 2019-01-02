@@ -701,6 +701,9 @@ table {
 .service {
     min-height: 288px;
     background-color: #e5e5e5;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     margin-bottom: 94px;
 }
 .service-container {
@@ -751,6 +754,9 @@ position:absolute;
     padding :9px 136px 9px 20px;
     outline : none;
     color : #f7e184;
+}
+.service-controls-btn .service-active:hover{
+    background: #000000;
 }
 .service-controls-garanty label:active {
     background : black;
@@ -1019,6 +1025,7 @@ position:absolute;
     outline : none;
     color: #00000032;
 }
+
 /* оформление каталога */
 .catalog-contaiter {
     width: 100%;
@@ -1582,6 +1589,9 @@ position:absolute;
 }
 .main-footer {
     min-width: 1200px;
+    max-width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 0;
     width: 100%;
     min-height: 209px;
@@ -1817,6 +1827,8 @@ position:absolute;
 }
 .show-modal{
     display: block;
+    animation-name: bounceleft;
+    animation-duration: 0.5s;
 }
 iframe {
     width : 100%;
@@ -1862,6 +1874,8 @@ iframe {
 }
 .show-modal-feedback{
     display: flex;
+    animation-name: bounceup;
+    animation-duration: 0.5s;
 }
 .modal-feedback input, .modal-feedback textarea {
     background : #eeeeee;
@@ -1947,6 +1961,11 @@ iframe {
     resize : none;
     padding-left : 5px;
 }
+
+
+
+
+
 .modal-btn {
     margin-top : 55px;
     margin-bottom : 92px;
@@ -1964,3 +1983,28 @@ iframe {
 .modal-btn:hover {
     background : #f0c52e;
 }
+
+/* анимация карты и окна ввода*/
+@keyframes bounceup{
+    0%{transform: translateY(-2000px);}
+    80%{transform: translateY(30px);}
+    90%{transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes bounceleft{
+    0%{transform: rotate(360deg) translateX(-2000px); }
+    50%{transform: rotate(360deg) translateX(10px);}
+    80%{transform: rotate(370deg) translateX(-10px);}
+    100%{transform: rotate(360deg) translateX(0px);}
+}
+.form-eror{
+    animation-name:form-eror;
+    animation-duration: 0.6s;
+}
+@keyframes form-eror{
+    0%,100%{transform: translateX(0); }
+    10%,30%,50%,70%,90%{ transform: translateX(-10px);}
+    20%,40%,60%,80%{ transform: translateX(10px);}
+   
+}
+

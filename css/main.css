@@ -1305,7 +1305,7 @@ position:absolute;
 }
 /* сортировка*/
 .sort-catalog {
-    max-width: 971px;
+    max-width: 972px;
     display: flex;
     background: #eeeeee;
     align-items: baseline;
@@ -1528,7 +1528,7 @@ position:absolute;
 }
 .paginator-next a{
     width: 85px;
-    padding: 25px 32px;
+    padding: 25px 29px;
     color: #000;
 }
 .paginator-prev a{

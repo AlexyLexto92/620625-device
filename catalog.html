@@ -95,6 +95,7 @@
             <!--формы-->
 
             <div class="general-forms">
+                <div class="filter-container">
                 <aside class="chek">
                     <!--радио кнопки и чекбоксы-->
                     <!--ИСПРАВЛЕНО-->
@@ -173,7 +174,8 @@
                     </form>
 
                 </aside>
-
+                </div>
+                <div class="sort-container">
                 <div class="right-side">
 
                     <div class="sort-catalog">
@@ -192,10 +194,10 @@
 
                         <ul class="sort-icon">
                             <li class="sort-up sort-active">
-                                <a  href="#"><img src="img/icon-up-dir.svg" alt="icon-up" width="11" height="10"></a>
+                                <a  href="#"><img src="img/icon-up-dir.svg" alt="icon-up" width="11" height="10"><span class="visually-hidden">Сортировка в прямом порядке</span></a>
                             </li>
                             <li class="sort-down">
-                                <a href="#"><img src="img/icon-down-dir.svg" alt="icon-down" width="11" height="10"></a>
+                                <a href="#"><img src="img/icon-down-dir.svg" alt="icon-down" width="11" height="10"><span class="visually-hidden">Сортировка в обратном порядке</span></a>
                             </li>
                         </ul>
                     </div>
@@ -280,15 +282,16 @@
                             <!--Реализация переключателя в каталоге с помощью ссылок-->
                             <li class="paginator-prev"> <a class="paginator-link paginator-link-prev" href="#">Назад</a></li>
 
-                            <li class="paginator-pages"> <a class="paginator-link paginator-pages-link  pages-link-active" href="#">1</a></li>
-                            <li class="paginator-pages"> <a class="paginator-link paginator-pages-link" href="#">2</a></li>
-                            <li class="paginator-pages"> <a class="paginator-link paginator-pages-link" href="#">3</a></li>
+                            <li class="paginator-pages"> <a class="paginator-link paginator-pages-link  pages-link-active" href="#">1<span class="visually-hidden">Первая страница</span></a></li>
+                            <li class="paginator-pages"> <a class="paginator-link paginator-pages-link" href="#">2<span class="visually-hidden">Вторая страница</span></a></li>
+                            <li class="paginator-pages"> <a class="paginator-link paginator-pages-link" href="#">3<span class="visually-hidden">Третья страница</span></a></li>
 
                             <li class="paginator-next"> <a class="paginator-link paginator-link-next" href="#">Вперед</a></li>
                         </ul>
                     </section>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 

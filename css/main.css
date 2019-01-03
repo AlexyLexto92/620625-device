@@ -79,7 +79,7 @@ a {
     align-items: center;
     margin-top: -1px;
 }
-input[type="search"] {
+.search-field {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -1043,14 +1043,13 @@ position:absolute;
     background: white;
 }
 .catalog-monopod h1 {
-   
     min-height: 42px;
     color: #000000;
     font-family: "Gilroy",Arial,sans-serif;
-    font-size: 47px;
+    font-size: 48px;
     font-weight: 900;
     line-height: 48px;
-    letter-spacing: 0.17px;
+    letter-spacing: 0.1px;
     margin-left: 60px;
     margin-top: 38px;
     margin-bottom: 24px;
@@ -1067,13 +1066,27 @@ position:absolute;
     letter-spacing: 0.14px;
 }
 .breadcrumbs li {
-    padding-right: 13px;
+    
     letter-spacing: .012em;
     word-spacing: 0.012em;
+   
 }
-.breadcrumbs a {
+.breadcrumbs a{
     height: 10px;
-    padding-right: 23px;
+    padding-right: 24px;
+    background: url(../img/nav-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.breadcrumbs li:last-child a{
+    background: none;
+
+}
+.breadcrumbs li:nth-child(2){
+    margin-left: 10px;
+}
+.breadcrumbs li:nth-child(3){
+   margin-left: 15px;
 }
 .breadcrumbs a{
     color:#00000041;
@@ -1087,6 +1100,7 @@ position:absolute;
 .breadcrumbs li:last-child a{
     color:#00000041;
 }
+/*
 .breadcrumbs li:not(:last-child):after {
     content: "";
     position: absolute;
@@ -1096,6 +1110,7 @@ position:absolute;
     background-repeat: no-repeat;
     background-position: center;
 }
+*/
 .general-forms {
     margin: 0 auto;
     justify-content: flex-end;
@@ -1421,12 +1436,10 @@ position:absolute;
 .pool-item{
     margin-right:40px;
 }
-.pool-item, .hand-item{
-    margin-top: 70px;
+.pool-item, .hand-item {
+    margin-top: 46px;
 }
-.professional-item, .hand-item{
-    margin-left: 3px;
-}
+
 .catalog-item-image{
     width: 360px;
     height: 380px;
@@ -1472,20 +1485,35 @@ position:absolute;
 .catalog-button:hover,.catalog-item-image:hover~.catalog-button{
     visibility: visible;
 }
-.catalog-link{
-    font-weight: 800;
+.catalog-link {
+    font-weight: 900;
+    letter-spacing: 0.3px;
     font-size: 18px;
     line-height: 24px;
     font-family: "Gilroy", Arial, sans-serif;
 }
-.catalog-item-value{
+.profi-link{
+    width: 182px;
+    font-size: 17px;
+    letter-spacing: 1.05px;
+    line-height: 24px;
+}
+.pool-link{
+    letter-spacing: 0.1px;
+}
+.hand-link{
+    width: 233px;
+    letter-spacing: 0.6px;
+    font-size: 18px;
+}
+.catalog-item-value {
     font-weight: 300;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 25px;
     font-family: "Gilroy", Arial, sans-serif;
     text-align: right;
     color: #464646;
-    letter-spacing: 0.45px;
+    letter-spacing: 0.3px;
 }
 .btn-catalog-busket{
     width: 200px;
@@ -1529,7 +1557,7 @@ position:absolute;
 }
 /* кнопки страниц */
 .paginator {
-    margin-top: 59px;
+    margin-top: 36px;
     width: 762px;
     height: 70px;
     padding-left: 0px;
@@ -1546,7 +1574,7 @@ position:absolute;
 }
 .paginator-next a{
     width: 85px;
-    padding: 25px 29px;
+    padding: 25px 24px 25px 39px;
     color: #000;
 }
 .paginator-prev a{
@@ -1582,7 +1610,8 @@ position:absolute;
 }
 .paginator li:last-child{
     letter-spacing: 4px;
-    margin-left: 184px;
+    margin-left: 171px;
+    padding-left: 5px;
 }
 .paginator li:nth-child(4){
     letter-spacing: 4px;

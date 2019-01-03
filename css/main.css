@@ -701,6 +701,7 @@ table {
 .service {
     min-height: 288px;
     background-color: #e5e5e5;
+    min-width: 1200px;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 94px;
@@ -1101,7 +1102,7 @@ position:absolute;
     display: flex;
     /* background: linear-gradient(to bottom, #dbdbdb 70px, #eeeeee 70px, #eeeeee 100%); */
     /* margin: 0 auto; */
-    /* min-width: 1160px; */
+     min-width: 1200px; 
     /* max-width: 1440px; */
     margin-top: 31px;
 }

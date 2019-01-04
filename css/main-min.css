@@ -396,7 +396,7 @@ a {
     background: url(../img/slider-button-empty.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 23px;
+    width: 24px;
     background-size: 50%;
     height: 24px;
 }
@@ -405,7 +405,7 @@ a {
     background: url(../img/slider-button.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 23px;
+    width: 24px;
     background-size: 50%;
     height: 24px;
  }
@@ -416,7 +416,7 @@ a {
     background: url(../img/slider-button.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 23px;
+    width: 24px;
     background-size: 50%;
     height: 24px;
    
@@ -2074,8 +2074,8 @@ position:absolute;
         flex-basis: 117px;
 }
 .tel{
-    -ms-flex-preferred-size: 164px;
-        flex-basis: 164px;
+    -ms-flex-preferred-size: 165px;
+        flex-basis: 165px;
     color: #ffffff;
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 15px;

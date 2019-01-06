@@ -573,7 +573,10 @@ a {
     background-color : #f0c52e;
     padding: 9px 48px;
 }
-table {
+.kwadrocopter-table,
+.bracelet-table,
+.stand-table
+{
     margin-top: 55px;
 }
 .features-lenght-of-stand, .features-kwadrocopter-fly-lenght, .features-work-hours {
